@@ -4,9 +4,47 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Document</title>
+  <title>New eXperience Gram</title>
 </head>
 <body>
-  
+  <div class="logo-effect">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <style>
+    .logo-effect {
+      position: relative;
+      width: 1400px;
+      height: 600px;
+      background-color: gray;
+      transform: all 1s;
+    }
+    .logo-effect span {
+      position: absolute;
+      display: inline-block;
+      width: 10%;
+      height: 400px; 
+      background: #fff;
+    }
+    .logo-effect span:first-child {
+      top: 13%;
+      left: 13%;
+      transform: skew(-30deg) ;
+    }
+    .logo-effect span:nth-child(2) {
+      top: 13%;
+      left: 33%;
+    }
+    .logo-effect span:nth-child(3) {
+      top: 13%;
+      left: 53%;
+    }
+    .logo-effect span:nth-child(4) {
+      top: 13%;
+      left: 73%;
+    }
+  </style>
 </body>
 </html>
