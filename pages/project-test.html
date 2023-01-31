@@ -96,7 +96,7 @@
               </p>
             </div>
 
-            <section class="youtube">
+            <!-- <section class="youtube">
               <div class="youtube__area">
                 <div id="player" class="player"></div>
               </div>
@@ -104,10 +104,7 @@
               <div class="inner">
               </div>
             </section>
-
-            <div class="project-video mb220 mt220 youtbe-v">
-              <!-- <div id="player"></div> -->
-              <script>
+             <script>
                 // Youtube IFrame API를 비동기로 로드합니다.
               const tag = document.createElement('script');
 
@@ -118,21 +115,37 @@
               function onYouTubePlayerAPIReady() {
                 // <div id="player"></div>
                 new YT.Player('player', {
-                  videoId: 'bcQFy1UGVaU', // 재생할 유튜브 영상 ID
+                  videoId: 'vuxyiyaSOAE', // 재생할 유튜브 영상 ID
                   playerVars: {
                     autoplay: true, // 자동 재생 유무
                     loop: true, // 반복 재생 유무
-                    playlist: 'bcQFy1UGVaU' // 반복 재생할 유튜브 영상 ID 목록
+                    playlist: 'bcQFy1UGVaU', // 반복 재생할 유튜브 영상 ID 목록
                   },
                   events: {
                     // 영상이 준비되었을 때,
                     onReady: function (event) {
+                      event.target.setPlaybackQuality('hd1080');
                       event.target.mute(); // 음소거
                     }
                   }
                 });
               }
-              </script>
+              </script> -->
+
+            <div class="project-video mb220 mt220 youtbe-v">
+              <iframe src="https://player.vimeo.com/video/794350734?h=7cb7f03309&autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              
+              <!-- <iframe
+                        src="https://player.vimeo.com/video/794350734?h=28f3829c62&autoplay=1&loop=1&title=0&byline=0&portrait=0&autopause=0&background=1"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                      ></iframe> -->
+            </div>
+            
+
+            <div class="project-video mb220 mt220 youtbe-v">
+              <!-- <div id="player"></div> -->
+             
             </div>
             
               <!-- <iframe src="https://www.youtube.com/embed/bcQFy1UGVaU?autoplay=1&mute=1&playsinline=1&loop=1&playlist=bcQFy1UGVaU&controls=0&disablekb=" width="560" height="315" frameborder="0" allowfullscreen></iframe> -->
@@ -154,9 +167,9 @@
               </p>
             </div>
 
-            <div class="project-video mb220 mt220 youtbe-v">
+            <!-- <div class="project-video mb220 mt220 youtbe-v">
               <div id="player2" ></div>
-            </div>
+            </div> -->
 
           </div>
         </div>
