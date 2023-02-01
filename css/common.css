@@ -315,6 +315,7 @@ html.loaded:before, html.loaded:after {
 
 
 @media screen and (max-width: 1440px) {
+  .footer {background-size: 160% auto;}
   .footer-inner {padding: 0 40px}
 }
 

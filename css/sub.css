@@ -384,7 +384,7 @@ html {
   #masonry-grid a:hover .ov, #masonry-grid a:hover .ov-ty { opacity: 0;}
   #masonry-grid a .ov-tit {
     left: 0;
-    bottom: 25px;
+    bottom: 18px;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 1;
