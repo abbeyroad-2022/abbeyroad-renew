@@ -517,6 +517,24 @@ html {
 }
 
 .next-project  a:hover .nextpj-hover , .next-project  a:hover .nextpj-hover span {  -webkit-transform: translateY(0px);  transform: translateY(0px); opacity: 1;}
+.next-project.v2 a{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  padding-top: 31%;
+}
+
+.next-project a.bg-6nails {background-image: url("../img/work/detail/6nails/n1.png");}
+.next-project a.bg-144cake {background-image: url("../img/work/detail/144cake/n1.png");}
+.next-project a.bg-cyclean {background-image: url("../img/work/detail/cyclean/n1.png");}
+.next-project a.bg-endigo {background-image: url("../img/work/detail/endigo/n1.png");}
+.next-project a.bg-mobillink {background-image: url("../img/work/detail/mobillink/n1.png");}
+.next-project a.bg-mshop {background-image: url("../img/work/detail/mshop/n1.png");}
+.next-project a.bg-ocha {background-image: url("../img/work/detail/ocha/n1.png");}
+.next-project a.bg-spacec {background-image: url("../img/work/detail/spacec/n1.png");}
+.next-project a.bg-shinhan {background-image: url("../img/work/detail/cyclean/n1.png");}
+
+
 
 /* 작은 모니터  */
 @media screen and (min-width: 1025px) and (max-width: 1450px) {
@@ -557,6 +575,17 @@ html {
   .project-subtitle.type2 {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
   .project-subtitle.type2 h3, .project-subtitle.type2 p {width: 100%; padding-top: 20px;}
   
+      
+  .next-project.v2 a{padding-top: 54%;}
+  .next-project a.bg-6nails {background-image: url("../img/work/detail/6nails/m-n1.png");}
+  .next-project a.bg-144cake {background-image: url("../img/work/detail/144cake/m-n1.png");}
+  .next-project a.bg-cyclean {background-image: url("../img/work/detail/cyclean/m-n1.png");}
+  .next-project a.bg-endigo {background-image: url("../img/work/detail/endigo/m-n1.png");}
+  .next-project a.bg-mobillink {background-image: url("../img/work/detail/mobillink/m-n1.png");}
+  .next-project a.bg-mshop {background-image: url("../img/work/detail/mshop/m-n1.png");}
+  .next-project a.bg-ocha {background-image: url("../img/work/detail/ocha/m-n1.png");}
+  .next-project a.bg-spacec {background-image: url("../img/work/detail/spacec/m-n1.png");}
+  .next-project a.bg-shinhan {background-image: url("../img/work/detail/cyclean/m-n1.png");}
 }
 
 .grid {
