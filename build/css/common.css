@@ -11,9 +11,14 @@ html, body { font-size: 22px; font-family:  "Nanum Gothic", sans-serif;}
 .font-ng {font-family: "Nanum Gothic", sans-serif;}
 .fl { display: -webkit-box; display: -ms-flexbox; display: flex; }
 .fl-center {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;  -webkit-box-align: center;  -ms-flex-align: center;  align-items: center;}
+.fl-left-center {-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;  -webkit-box-align: center;  -ms-flex-align: center;  align-items: center;}
 .fl-row-reverse {-webkit-box-orient: horizontal;-webkit-box-direction: reverse;-ms-flex-direction: row-reverse;flex-direction: row-reverse;}
+.fl-wrap {-ms-flex-wrap: wrap;flex-wrap: wrap;}
 .rl {position: relative;}
 .w100 { display: block; margin: 0 auto; width: 100%; }
+.h100 { display: block; height: 100vh; height: calc(var(--vh, 1vh) * 100); }
+.h150 { display: block; height: 150vh; height: calc(var(--vh, 1vh) * 150); }
+.h200 { display: block; height: 200vh; height: calc(var(--vh, 1vh) * 200); }
 .t-center {text-align: center;}
 .ovx-hidden {overflow-x: hidden;}
 .mb200 {margin-bottom: 200px;}
@@ -282,12 +287,12 @@ html.loaded:before, html.loaded:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; 
-  -webkit-box-align: center; 
-      -ms-flex-align: center; 
-          align-items: center;
+  -webkit-box-align: start; 
+      -ms-flex-align: start; 
+          align-items: flex-start;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-  background: #000 url("../img/work/display/footer.png") 50% /cover no-repeat;
+  background: #000 url("../img/work/display/footer.png") 50% top /cover no-repeat;
   background-attachment: fixed;
   z-index: 9;
 }
@@ -315,6 +320,7 @@ html.loaded:before, html.loaded:after {
 
 
 @media screen and (max-width: 1440px) {
+  .footer {background-size: 160% auto;}
   .footer-inner {padding: 0 40px}
 }
 
@@ -322,28 +328,6 @@ html.loaded:before, html.loaded:after {
   .footer-inner {padding: 0 20px}
 }
 
-.video-background {
-  position: relative;
-  display: block;
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-}
-
-.video-foreground,
-.video-background iframe {
-  position: absolute;
-  bottom: 0;
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  border: 0;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
 
 .last-item {
   padding-bottom: 140vh;

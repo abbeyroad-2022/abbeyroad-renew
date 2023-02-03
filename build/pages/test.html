@@ -7,44 +7,104 @@
   <title>New eXperience Gram</title>
 </head>
 <body>
-  <div class="logo-effect">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
+  <div class="editor-indicator" data-state="EMPTY">
+    <span class="editor-indicator-text"></span>
+    <svg viewBox="0 0 6085 4556" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+      <path d="M2130.5 3309.5H1711.5L529 4389H1237L2130.5 3309.5Z" fill="black"/>
+      <path d="M2893.5 3309.5H2486.5L1917 4389H2672L2893.5 3309.5Z" fill="black"/>
+      <path d="M3955 3309.5H4374L5556.5 4389H4848.5L3955 3309.5Z" fill="black"/>
+      <path d="M3192 3309.5H3599L4168.5 4389H3413.5L3192 3309.5Z" fill="black"/>
+      </svg>
+
+    <!-- <svg viewBox="0 0 5017 1105" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+      <path d="M1603.5 0H1223.5L0.5 1104.5H731L1603.5 0Z" fill="white" class="line1"/>
+      <path d="M2387 0H2007L1425.5 1104.5H2155.5L2387 0Z" fill="white" class="line2"/>
+      <path d="M2850 1104.5L2767 0H3188.5L3628 1104.5H2850Z" fill="white" class="line3"/>
+      <path d="M4293 1104.5L3568.5 0H3913L5017 1104.5H4293Z" fill="white"  class="line4"/>
+    </svg> -->
   </div>
+  
   <style>
-    .logo-effect {
-      position: relative;
-      width: 1400px;
-      height: 600px;
-      background-color: gray;
-      transform: all 1s;
+    .editor-indicator {
     }
-    .logo-effect span {
-      position: absolute;
-      display: inline-block;
-      width: 10%;
-      height: 400px; 
-      background: #fff;
-    }
-    .logo-effect span:first-child {
-      top: 13%;
-      left: 13%;
-      transform: skew(-30deg) ;
-    }
-    .logo-effect span:nth-child(2) {
-      top: 13%;
-      left: 33%;
-    }
-    .logo-effect span:nth-child(3) {
-      top: 13%;
-      left: 53%;
-    }
-    .logo-effect span:nth-child(4) {
-      top: 13%;
-      left: 73%;
-    }
+.editor-indicator[data-state="EMPTY"] .editor-indicator-text {
+  display: none;
+}
+.editor-indicator[data-state="ACTIVE"] {
+  --glow-color: var(--blue);
+}
+
+.editor-indicator[data-state="ACTIVE"] .icon :nth-child(1) {
+  d: path("M2382.07 400H2078.82L1223 4389H1735.41L2382.07 400Z");
+}
+.editor-indicator[data-state="ACTIVE"] .icon :nth-child(2) {
+  d: path("M2934.28 400H2639.72L2227.55 4389H2773.97L2934.28 400Z");
+}
+.editor-indicator[data-state="ACTIVE"] .icon :nth-child(3) {
+  d: path("M3702.93 400H4006.18L4862 4389H4349.59L3702.93 400Z");
+}
+.editor-indicator[data-state="ACTIVE"] .icon :nth-child(4) {
+  d: path("M3150.72 400H3445.28L3857.45 4389H3311.03L3150.72 400Z");
+} 
+
+
+
+.editor-indicator[data-state="ACTIVE2"] .icon :nth-child(1) {
+  d: path("M2130.5 4389H1666L2727.5 426H2977L1997 4389Z");
+}
+.editor-indicator[data-state="ACTIVE2"] .icon :nth-child(2) {
+  /* d: path("M2551.5 4389H2220.5L3032  1930L2551.5 4389Z"); */
+}
+.editor-indicator[data-state="ACTIVE2"] .icon :nth-child(3) {
+  d: path("M4272.5 4389H4603.5L3542 426H3292.5L4272.5 4389Z");
+}
+.editor-indicator[data-state="ACTIVE2"] .icon :nth-child(4) {
+  d: path("M3718 4389H4049L2987.5 426H2738L3718 4389Z");
+}
+.icon {
+  width: 80%;
+  height: 80%;
+  overflow: visible;
+  display: block;
+}
+.icon path {
+  fill: white;
+  stroke: none;
+  transition: all 1s;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #2d3039;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
   </style>
+
+  <script>
+  const indicator = document.querySelector(".editor-indicator");
+
+    let currentState = indicator.dataset.state;
+    
+    indicator.addEventListener("click", () => {
+      let nextState = "";
+    
+      if (currentState == "EMPTY") {
+        nextState = "ACTIVE";
+      } else if(currentState == "ACTIVE"){
+        nextState = "ACTIVE2";
+      } else {
+        nextState = "EMPTY";
+      }
+      
+      indicator.dataset.state = nextState;
+      currentState = nextState;
+    });
+    
+  </script>
 </body>
 </html>

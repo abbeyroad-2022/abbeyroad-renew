@@ -1,10 +1,10 @@
 (() => {
 
-    const actions = {
-        birdFlies() {
-            document.querySelector('[data-index="2"] .bird').style.transform = 'translateX(${window.innerWidth}px)' ;
-        }
-    };
+    // const actions = {
+    //     birdFlies() {
+    //         document.querySelector('[data-index="2"] .bird').style.transform = 'translateX(${window.innerWidth}px)' ;
+    //     }
+    // };
 
     const stepElems = document.querySelectorAll('.step');
     const graphicElems = document.querySelectorAll('.graphic-item');
@@ -17,9 +17,10 @@
 
     function activate(action) {
         currentItem.classList.add('visible');
-        if (action) {
-            actions[action]();
-        }
+        // if (action) {
+        //     console.log(actions)
+        //     actions[action]();
+        // }
     }
 
     function inactivate() {
@@ -44,6 +45,32 @@
             }           
         }
     });
+
+    var swiper = new Swiper(".about-slider", {
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+      
+
+      let btn = document.querySelector(".swiper-btn");
+      let tr = true
+      btn.addEventListener("click",()=>{
+        tr = !tr;
+        if(tr){
+          console.log("움직여")
+          swiper.autoplay.start();
+        } else {
+          console.log("멈춰")
+          swiper.autoplay.pause();
+        }
+      })
+
     
 
 })();
