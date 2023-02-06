@@ -46,7 +46,7 @@
         }
     });
 
-    var swiper = new Swiper(".about-slider", {
+    var swiper = new Swiper(".abslider", {
         loop: true,
         autoplay: {
           delay: 2500,
@@ -60,14 +60,14 @@
 
       let btn = document.querySelector(".swiper-btn");
       let tr = true
-      btn.addEventListener("click",()=>{
+      btn.addEventListener("click",(e)=>{
         tr = !tr;
         if(tr){
-          console.log("움직여")
+          e.target.classList.remove("stop")
           swiper.autoplay.start();
         } else {
-          console.log("멈춰")
-          swiper.autoplay.pause();
+          e.target.classList.add("stop")
+          swiper.autoplay.stop();
         }
       })
 

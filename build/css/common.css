@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
 
 html, body { font-size: 22px; font-family:  "Nanum Gothic", sans-serif;}
 * {
@@ -9,9 +10,12 @@ html, body { font-size: 22px; font-family:  "Nanum Gothic", sans-serif;}
 
 /* common */
 .font-ng {font-family: "Nanum Gothic", sans-serif;}
+.font-spo {font-family: "Spoqa Han Sans Neo", sans-serif;}
 .fl { display: -webkit-box; display: -ms-flexbox; display: flex; }
-.fl-center {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;  -webkit-box-align: center;  -ms-flex-align: center;  align-items: center;}
-.fl-left-center {-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;  -webkit-box-align: center;  -ms-flex-align: center;  align-items: center;}
+.fl-center {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+.fl-left-center {-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+.fl-left-top {-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start;}
+.fl-bet-top {-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start;}
 .fl-row-reverse {-webkit-box-orient: horizontal;-webkit-box-direction: reverse;-ms-flex-direction: row-reverse;flex-direction: row-reverse;}
 .fl-wrap {-ms-flex-wrap: wrap;flex-wrap: wrap;}
 .rl {position: relative;}
@@ -21,32 +25,48 @@ html, body { font-size: 22px; font-family:  "Nanum Gothic", sans-serif;}
 .h200 { display: block; height: 200vh; height: calc(var(--vh, 1vh) * 200); }
 .t-center {text-align: center;}
 .ovx-hidden {overflow-x: hidden;}
+.mb100 {margin-bottom: 100px;}
 .mb200 {margin-bottom: 200px;}
 .mb220 {margin-bottom: 220px;}
 .mb300 {margin-bottom: 300px;}
 .mt30 {margin-top: 30px;}
-.mt200 {margin-top: 300px;}
+.mt200 {margin-top: 200px;}
 .mt220 {margin-top: 220px;}
+.pt200 {padding-top: 200px;}
+.pb120 {padding-bottom: 120px;}
+.pb200 {padding-bottom: 200px;}
 .pt300 {padding-top: 300px;}
 .mo.toggle-btn {display: none;}
+.sticky {position: sticky; top:0}
+.bg-gray {background: #F2F2F2;}
 
 
 /* 테블릿 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mb100 {margin-bottom: 50px;}
   .mb200 {margin-bottom: 100px;}
   .mb220 {margin-bottom: 110px;}
   .mb300 { margin-bottom: 150px;}
+  .pt200 {padding-top: 100px;}
+  .pb120 {padding-bottom: 60px;}
+  .pb200 {padding-bottom: 100px;}
   .pt300 {padding-top: 150px;}
   .mt220 {margin-top: 110px;}
+  .mt200 {margin-top: 100px;}
 }
 
 /* 모바일 */
 @media screen and (max-width: 767px) {
+  .mb100 {margin-bottom: 40px;}
   .mb200 {margin-bottom: 80px;}
   .mb220 {margin-bottom: 85px;}
   .mb300 { margin-bottom: 120px;}
+  .pt200 {padding-top: 80px;}
+  .pb120 {padding-bottom: 50px;}
+  .pb200 {padding-bottom: 80px;}
   .pt300 {padding-top: 110px;}
   .mt220 {margin-top: 90px;}
+  .mt200 {margin-top: 80px;}
 }
 
 
@@ -291,13 +311,13 @@ html.loaded:before, html.loaded:after {
       -ms-flex-align: start; 
           align-items: flex-start;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  background: #000 url("../img/work/display/footer.png") 50% top /cover no-repeat;
+  background: #000 url("../img/work/display/copybg_pc.png") 50% top/90% auto no-repeat;
   background-attachment: fixed;
   z-index: 9;
 }
 
 .footer-inner {
+  padding-top: 30%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,23 +329,23 @@ html.loaded:before, html.loaded:after {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #fff;
-  line-height: 1.2;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.footer-inner .footer-title {  font-size: 70px; font-weight: bold; }
-.footer-inner .footer-title span { display: block; font-size: 44px; padding: 30px 0 20px; font-weight: 400;}
-.footer-inner .footer-copy {padding-top: 20px;}
-.footer-inner .footer-copy, .footer-inner a { font-size: 22px; color: #fff;}
+.footer-inner .footer-title {max-width: 730px; padding-bottom: 40px; font-size: 60px; line-height: 68px; font-weight: bold; }
+.footer-inner .footer-copy {padding-top: 40px;}
+.footer-inner .footer-copy { font-size: 13px; }
+.footer-inner a { color: #fff; }
 .footer-inner .footer-copy span {display: block; opacity: 0.8;}
 
 
 @media screen and (max-width: 1440px) {
-  .footer {background-size: 160% auto;}
-  .footer-inner {padding: 0 40px}
+  .footer-inner {padding-left: 40px}
 }
 
 @media screen and (max-width: 767px) {
-  .footer-inner {padding: 0 20px}
+  .footer-inner {padding-left: 20px}
 }
 
 
@@ -349,7 +369,7 @@ html.loaded:before, html.loaded:after {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   
   .footer-inner {text-align: left;}
-  .footer-inner .footer-title {  font-size: 50px; }
+  .footer-inner .footer-title {  font-size: 50px; max-width: 587px; }
   .footer-inner .footer-title span {  font-size: 34px; }
   .footer-inner .footer-copy, .footer-inner a { font-size: 18px; }
   
@@ -420,8 +440,8 @@ html.loaded:before, html.loaded:after {
     font-size: 20px;
     line-height: 35px;
   }
-  .footer {height: 500px; background-size: contain;}
-  .footer-inner .footer-title {  font-size: 24px; }
+  .footer {height: 600px; background-position: 50% 70%;}
+  .footer-inner .footer-title {  font-size: 35px; line-height: 1.3; }
   .footer-inner .footer-title span {  font-size: 20px; }
   .footer-inner .footer-copy, .footer-inner a { font-size: 14px; }
 }
