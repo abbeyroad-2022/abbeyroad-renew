@@ -472,6 +472,7 @@ html.loaded:before, html.loaded:after {
   top:50%;
   right: 2px;
 }
+
 .topbtn::before {
   display: block;
   content: "";
@@ -524,6 +525,7 @@ html.loaded:before, html.loaded:after {
 }
 
 
+
 /* animate.js 관련 css*/
 .animated-text span{ display: inline-block;}
 ._box {
@@ -549,3 +551,4 @@ html.loaded:before, html.loaded:after {
 }
 .toggle-btn.on::after { -webkit-transform: rotate(45deg); transform: rotate(45deg); top: 15px;}
 .toggle-btn.on::before { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); top: 15px;}
+
