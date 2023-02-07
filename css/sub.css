@@ -755,10 +755,9 @@ html {
   }
   
   .about .brand-bg {
-    padding-top: 0;
+    padding-top: 150%;
     background: none;
     position: relative;
-    height: 80vh;
   }
 
   .about .brand-bg .bg-wrap {
