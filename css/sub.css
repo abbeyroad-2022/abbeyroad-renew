@@ -322,6 +322,7 @@ html {
   margin-bottom: 59px;
 }
 
+
 .about .brand strong, .about .brand-info strong {
   font-weight: bold;
 }
@@ -362,6 +363,12 @@ html {
 
 .about .brand-info li:last-child {
   border-right: 0;
+}
+
+.about .brand-bg {
+  padding-top: 75%;
+  background: url("../img/about/about-brand1.png") 50% top/cover no-repeat;
+  background-attachment: fixed;
 }
 
 .about img {
@@ -527,6 +534,12 @@ html {
     padding: 25px 6%;
   }
 
+  .about .brand-bg {
+    padding-top: 200%;
+    background: url(../img/about/about-brand1-m.png) left top/cover no-repeat;
+    background-attachment: fixed;
+  }
+
 }
 
 /* 모바일 */
@@ -540,7 +553,7 @@ html {
   .about .title {
     width: auto;
     margin: 0px 20px 200px;
-    font-size: 15vw;
+    font-size: 14.1vw;
   }
 
   .about .nxgram {
@@ -554,7 +567,7 @@ html {
     font-size: 25px;
   }
   .about .title h2 span:nth-child(2) {
-    width: 215px; -webkit-transform: translateX(60px); transform: translateX(60px);
+    width: 250px; -webkit-transform: translateX(60px); transform: translateX(60px);
   }
   
   .about-slide .about-slide-inner {
@@ -664,15 +677,21 @@ html {
     width: 50%;
     text-align: center;
     font-size: 5vw;
+    margin-bottom: 5vw;
   }
 
   .about .brand-info li:nth-child(2) {
     border-right: 0;
-    margin-bottom: 3vw;
   }
 
   .about img.w50 {
     width: 100%;
+  }
+  
+  .about .brand-bg {
+    padding-top: 200%;
+    background: url(../img/about/about-brand1-m.png) 50% top/cover no-repeat;
+    background-attachment: fixed;
   }
 
 }
