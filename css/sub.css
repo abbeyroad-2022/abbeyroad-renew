@@ -625,7 +625,7 @@ html {
   .about .nxgram {
     left: auto;
     right: 0;
-    bottom: -160px;
+    bottom: -180px;
   }
   .about .rolltext {
     width: 200px;
@@ -756,7 +756,7 @@ html {
   
   .about .brand-bg {
     padding-top: 180%;
-    background: url(../img/about/about-brand1-m.png) 50% top/100% auto no-repeat;
+    background: url(../img/about/about-brand1-m.png) left top/100% auto no-repeat;
     background-attachment: fixed;
   }
 

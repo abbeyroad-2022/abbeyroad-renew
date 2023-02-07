@@ -62,7 +62,14 @@
             <span>there is</span>
             <span>finding</span>
             <span>this is</span>
-            <span class="nxgram rellax" data-rellax-speed="5" data-rellax-mobile-speed="-5" ><img src="../img/about/abbeyroad.png" alt="abbey road"></span>
+            <span class="nxgram rellax"   
+              data-rellax-speed="5"
+              data-rellax-xs-speed="1"
+              data-rellax-mobile-speed="1"
+              data-rellax-tablet-speed="5"
+              data-rellax-desktop-speed="5">
+              <img src="../img/about/abbeyroad.png" alt="abbey road">
+            </span>
         </h2>
       </div>
 
@@ -388,12 +395,12 @@
     <script type="text/javascript" src="../js/rellax.js"></script>
     <script>
       var rellax = new Rellax('.rellax', {
+        breakpoints:[576, 768, 1201]
         // center: true
-        callback: function (position) {
+        //callback: function (position) {
           // callback every position change
           //console.log(position);
-        },
-        breakpoints: [576, 768, 1024]
+        //},
       });
     </script>
 
