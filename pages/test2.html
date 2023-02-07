@@ -4,31 +4,70 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
   <title>Document</title>
 </head>
 <body>
-  <button id="container"></button>
+
+  <lottie-player src="../img/json/motion_charging2.json" background="transparent" style="width: 50%; height: 50vh;" speed="1" loop autoplay></lottie-player>
+  <lottie-player src="../img/json/motion_barcode2.json" background="transparent" style="width: 500px; height: 500px;" speed="1" loop autoplay></lottie-player>
+  <lottie-player src="../img/json/motion_connect2.json" background="transparent" style="width: 500px; height: 500px;" speed="1" loop autoplay></lottie-player>
+  <lottie-player src="../img/json/splash2.json" background="transparent" style="width: 500px; height: 500px;" speed="1" loop autoplay></lottie-player>
+
+
+  <div id="container"></div>
+  <!-- <div id="container2"></div>
+  <div id="container3"></div> -->
   <style>
     #container {
-      position: fixed;
-      width: 1000px;
-      height: 1000px;
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+    }
+    #container2 {
+      width: 500px;
+      height: 500px;
+      border: 1px solid yellow;
+    }
+    #container3 {
+      width: 500px;
+      height: 500px;
+      border: 1px solid orangered;
     }
   </style>
+  <img src="../../img/json/test.json" alt="">
 </body>
 
-<script src="https://cdnjs.com/libraries/lottie-web" type="text/javascript"></script>
-<script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>
-<script>
-var animation = lottieWeb.loadAnimation({
-  container: document.getElementById('container'),
-  path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/pause/pause.json',
-  renderer: 'svg',
-  loop: false,
-  autoplay: false,
-  name: "Demo Animation",
-});
-
-animation.goToAndStop(14, true);
-</script>
 </html>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://dev.anthonyfessy.com/lottie.min.js"></script>
+<script>
+
+      /* Shapes */
+    var animation = document.getElementById('container');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: animation,
+      animType: 'svg',
+      loop: true,
+      path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/pause/pause.json'
+    });
+  
+      /* Shapes */
+      var animation2 = document.getElementById('container2');
+    var animItem2 = bodymovin.loadAnimation({
+      wrapper: animation2,
+      animType: 'svg',
+      loop: true,
+      path: '../../img/json/motion_charging2.json',
+    });
+
+    /* Shapes */
+    var animation3 = document.getElementById('container3');
+    var animItem3 = bodymovin.loadAnimation({
+      wrapper: animation3,
+      animType: 'svg',
+      loop: true,
+      path: 'https://abbeyroad-2022.github.io/abbeyroad-renew/img/json/motion_connect.json',
+    });
+    </script>
