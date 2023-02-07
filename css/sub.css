@@ -114,7 +114,7 @@ html {
 }
 
 .about-slide .about-slide-inner .swiper-pagination-bullet {
-  margin: 0 2px !important;
+  margin: 0 !important;
   width: 15px;
   height: 30px;
   background: url("../img/about/loading.png") -17px 0 no-repeat;
@@ -141,8 +141,8 @@ html {
   position: absolute;
   top: 90%;
   left:50%;
-  -webkit-transform: translateX(-4000%);
-          transform: translateX(-4000%);
+  -webkit-transform: translateX(-4130%);
+          transform: translateX(-4130%);
   width: 15px;
   height: 30px;
   background: url("../img/about/loading.png") -116px 0 no-repeat;
@@ -184,7 +184,6 @@ html {
   font-size: 16px;
   line-height: 2;
   font-weight: 300;
-  opacity: 0.6;
 }
 
 .about-slide .about-slide-inner .type2 {
@@ -358,6 +357,10 @@ html {
   border-right: #707070 1px dashed;
 }
 
+.about .brand-info li:first-child {
+  padding-left: 0px;
+}
+
 .about .brand-info li:last-child {
   border-right: 0;
 }
@@ -443,7 +446,7 @@ html {
   }
 
   .about-slide .about-slide-inner .swiper-pagination{
-    width: 125px;
+    width: 95px;
     left: 40px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -452,7 +455,7 @@ html {
   .about-slide .about-slide-inner .swiper-btn {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    left: 160px;
+    left: 140px;
   }
   .about .history-item, .about .history-item:nth-child(4n) {
     width: 33.3%;
@@ -530,7 +533,7 @@ html {
   }
   
   .about-slide .about-slide-inner .swiper-pagination{
-    width: 125px;
+    width: 95px;
     left: 40px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -539,7 +542,7 @@ html {
   .about-slide .about-slide-inner .swiper-btn {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    left: 160px;
+    left: 140px;
   }
   
   .about .history-item h4 {
@@ -621,7 +624,7 @@ html {
   .about .nxgram {
     left: auto;
     right: 0;
-    bottom: -180px;
+    bottom: -160px;
   }
   .about .rolltext {
     width: 200px;
@@ -662,7 +665,7 @@ html {
   }
   
   .about-slide .about-slide-inner .swiper-pagination{
-    width: 125px;
+    width: 95px;
     left: 20px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -671,7 +674,7 @@ html {
   .about-slide .about-slide-inner .swiper-btn {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    left: 140px;
+    left: 120px;
   }
   
   .about .history-item  {
@@ -751,30 +754,10 @@ html {
   }
   
   .about .brand-bg {
-    padding-top: 150%;
-    background: url(../img/about/about-brand1-m.png) left top/cover no-repeat;
+    padding-top: 200%;
+    background: url(../img/about/about-brand1-m.png) 50% top/cover no-repeat;
+    background-attachment: fixed;
   }
-
-  /* .about .brand-bg .bg-wrap {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .about .brand-bg .bg {
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: left top;
-    background-image: url("../img/about/about-brand1-m.png")
-  } */
 
   .about .history-item:nth-child(n) {
     -webkit-transition-delay: 0.1s;
@@ -1076,10 +1059,10 @@ html {
 .next-project a.bg-cyclean {background-image: url("../img/work/detail/cyclean/n1.png");}
 .next-project a.bg-endigo {background-image: url("../img/work/detail/endigo/n1.png");}
 .next-project a.bg-mobillink {background-image: url("../img/work/detail/mobillink/n1.png");}
-.next-project a.bg-mshop {background-image: url("../img/work/detail/mshop/n1.png");}
 .next-project a.bg-ocha {background-image: url("../img/work/detail/ocha/n1.png");}
 .next-project a.bg-spacec {background-image: url("../img/work/detail/spacec/n1.png");}
-.next-project a.bg-shinhan {background-image: url("../img/work/detail/cyclean/n1.png");}
+.next-project a.bg-mshop {background-image: url("../img/work/detail/mshop/n1.png");}
+.next-project a.bg-shinhan {background-image: url("../img/work/detail/shinhan/n1.png");}
 
 
 
@@ -1122,7 +1105,6 @@ html {
   .project-subtitle.type2 {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
   .project-subtitle.type2 h3, .project-subtitle.type2 p {width: 100%; padding-top: 20px;}
   
-      
   .next-project.v2 a{padding-top: 54%;}
   .next-project a.bg-6nails {background-image: url("../img/work/detail/6nails/m-n1.png");}
   .next-project a.bg-144cake {background-image: url("../img/work/detail/144cake/m-n1.png");}
@@ -1132,7 +1114,8 @@ html {
   .next-project a.bg-mshop {background-image: url("../img/work/detail/mshop/m-n1.png");}
   .next-project a.bg-ocha {background-image: url("../img/work/detail/ocha/m-n1.png");}
   .next-project a.bg-spacec {background-image: url("../img/work/detail/spacec/m-n1.png");}
-  .next-project a.bg-shinhan {background-image: url("../img/work/detail/cyclean/m-n1.png");}
+  .next-project a.bg-mshop {background-image: url("../img/work/detail/mshop/m-n1.png");}
+  .next-project a.bg-shinhan {background-image: url("../img/work/detail/shinhan/m-n1.png");}
 }
 
 .grid {

@@ -406,35 +406,22 @@ html.loaded:before, html.loaded:after {
 
 /* 모바일 */
 @media screen and (max-width: 767px) {
-  .header {
-    position: fixed;
-    width: 100%;
-    height: 55px;
-    background: rgba(255, 255, 255, 1);
-    z-index: 55;
-  }
   .mo.toggle-btn {display: block;}
   .header .logo {
-    top:12px; 
-    left: 25px;
-    width: 23px;
+    top:20px; 
+    left: 20px;
+    width: 30px;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
   .header .burger  {
-    top: 15px;
-    right: 25px;
+    right: 20px;
     width: 30px;
   }
   .header .burger span {
     margin: 7px 0px;
   }
-  .header.active .logo {top:15px; -webkit-transform: translateY(0); transform: translateY(0);}
-  .header.active .burger span:last-child {
-    -webkit-transform: rotate(45deg) translate(-5px,-10px);
-    transform: rotate(45deg) translate(-3px,-8px);
-  }
-
+  .header.active .logo {top:20px; -webkit-transform: translateY(0); transform: translateY(0);}
   .header .menu.main {
     left: 20px;
     font-size: 30px;
@@ -485,7 +472,6 @@ html.loaded:before, html.loaded:after {
   top:50%;
   right: 2px;
 }
-
 .topbtn::before {
   display: block;
   content: "";
@@ -538,9 +524,9 @@ html.loaded:before, html.loaded:after {
 }
 
 
-
 /* animate.js 관련 css*/
 .animated-text span{ display: inline-block;}
+.animated-text.v2{opacity: 0;-webkit-transition: all 1s;transition: all 1s;-webkit-transition-delay: 2s;transition-delay: 2s;-webkit-transform: translateY(45px);transform: translateY(45px);}
 ._box {
   display: inline-block;
   padding-right: 10px;
@@ -564,4 +550,3 @@ html.loaded:before, html.loaded:after {
 }
 .toggle-btn.on::after { -webkit-transform: rotate(45deg); transform: rotate(45deg); top: 15px;}
 .toggle-btn.on::before { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); top: 15px;}
-
