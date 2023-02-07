@@ -358,10 +358,6 @@ html {
   border-right: #707070 1px dashed;
 }
 
-.about .brand-info li:first-child {
-  padding-left: 0px;
-}
-
 .about .brand-info li:last-child {
   border-right: 0;
 }

@@ -416,14 +416,14 @@ html.loaded:before, html.loaded:after {
   .mo.toggle-btn {display: block;}
   .header .logo {
     top:12px; 
-    left: 15px;
+    left: 25px;
     width: 23px;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
   .header .burger  {
     top: 15px;
-    right: 15px;
+    right: 25px;
     width: 30px;
   }
   .header .burger span {
