@@ -466,6 +466,7 @@ html.loaded:before, html.loaded:after {
 
 /* animate.js 관련 css*/
 .animated-text span{ display: inline-block;}
+.animated-text.v2{opacity: 0;transition: all 1s;transition-delay: 2s;transform: translateY(45px);}
 ._box {
   display: inline-block;
   padding-right: 10px;
