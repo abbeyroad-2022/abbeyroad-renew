@@ -31,6 +31,7 @@ html, body { font-size: 22px; font-family:  "Nanum Gothic", sans-serif;}
 .mt30 {margin-top: 30px;}
 .mt200 {margin-top: 200px;}
 .mt220 {margin-top: 220px;}
+.mt300 {margin-top: 300px;}
 .pt200 {padding-top: 200px;}
 .pb120 {padding-bottom: 120px;}
 .pb200 {padding-bottom: 200px;}
@@ -52,6 +53,7 @@ html, body { font-size: 22px; font-family:  "Nanum Gothic", sans-serif;}
   .pt300 {padding-top: 150px;}
   .mt220 {margin-top: 110px;}
   .mt200 {margin-top: 100px;}
+  .mt300 {margin-top: 150px;}
 }
 
 /* 모바일 */
@@ -66,6 +68,7 @@ html, body { font-size: 22px; font-family:  "Nanum Gothic", sans-serif;}
   .pt300 {padding-top: 110px;}
   .mt220 {margin-top: 90px;}
   .mt200 {margin-top: 80px;}
+  .mt300 {margin-top: 110px;}
 }
 
 
