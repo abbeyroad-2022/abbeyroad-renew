@@ -707,11 +707,10 @@ html {
   
   .about .brand-bg {
     padding-top: 150%;
-    background: none;
-    position: relative;
+    background: url(../img/about/about-brand1-m.png) left top/cover no-repeat;
   }
 
-  .about .brand-bg .bg-wrap {
+  /* .about .brand-bg .bg-wrap {
     clip: rect(0, auto, auto, 0);
     position: absolute;
     top: 0;
@@ -730,7 +729,7 @@ html {
     background-size: cover;
     background-position: left top;
     background-image: url("../img/about/about-brand1-m.png")
-  }
+  } */
 
   .about .history-item:nth-child(n) {
     transition-delay: 0.1s;
