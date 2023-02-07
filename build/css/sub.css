@@ -114,7 +114,7 @@ html {
 }
 
 .about-slide .about-slide-inner .swiper-pagination-bullet {
-  margin: 0 !important;
+  margin: 0 2px !important;
   width: 15px;
   height: 30px;
   background: url("../img/about/loading.png") -17px 0 no-repeat;
@@ -141,8 +141,8 @@ html {
   position: absolute;
   top: 90%;
   left:50%;
-  -webkit-transform: translateX(-4130%);
-          transform: translateX(-4130%);
+  -webkit-transform: translateX(-4000%);
+          transform: translateX(-4000%);
   width: 15px;
   height: 30px;
   background: url("../img/about/loading.png") -116px 0 no-repeat;
@@ -184,6 +184,7 @@ html {
   font-size: 16px;
   line-height: 2;
   font-weight: 300;
+  opacity: 0.6;
 }
 
 .about-slide .about-slide-inner .type2 {
@@ -273,7 +274,7 @@ html {
 }
 
 .about .history-item{
-  width: 396px;
+  width: 394px;
   padding-bottom: 120px;
 }
 
@@ -322,6 +323,7 @@ html {
   margin-bottom: 59px;
 }
 
+
 .about .brand strong, .about .brand-info strong {
   font-weight: bold;
 }
@@ -356,12 +358,14 @@ html {
   border-right: #707070 1px dashed;
 }
 
-.about .brand-info li:first-child {
-  padding-left: 0px;
-}
-
 .about .brand-info li:last-child {
   border-right: 0;
+}
+
+.about .brand-bg {
+  padding-top: 75%;
+  background: url("../img/about/about-brand1.png") 50% top/cover no-repeat;
+  background-attachment: fixed;
 }
 
 .about img {
@@ -376,6 +380,42 @@ html {
   max-width: 100%;
   width: auto;
 }
+
+.about .history-item:nth-child(4n+1) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.about .history-item:nth-child(4n+2) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.about .history-item:nth-child(4n+3) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.about .history-item:nth-child(4n) {
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+.about .organization-item:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.about .organization-item:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.about .organization-item:nth-child(3) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
 
 /* 작은 모니터 */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -403,7 +443,7 @@ html {
   }
 
   .about-slide .about-slide-inner .swiper-pagination{
-    width: 95px;
+    width: 125px;
     left: 40px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -412,11 +452,12 @@ html {
   .about-slide .about-slide-inner .swiper-btn {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    left: 140px;
+    left: 160px;
   }
   .about .history-item, .about .history-item:nth-child(4n) {
     width: 33.3%;
   }
+
   .about .organization-item {
     width: 33.3%;
     padding-right: 20px;
@@ -424,7 +465,24 @@ html {
   .about .brand-info li {
     padding: 44px 6%;
   }
+
+  .about .history-item:nth-child(3n+1) {
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+
+  .about .history-item:nth-child(3n+2) {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+
+  .about .history-item:nth-child(3n) {
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+
 }
+
 
 
 /* 테블릿 */
@@ -472,7 +530,7 @@ html {
   }
   
   .about-slide .about-slide-inner .swiper-pagination{
-    width: 95px;
+    width: 125px;
     left: 40px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -481,7 +539,7 @@ html {
   .about-slide .about-slide-inner .swiper-btn {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    left: 140px;
+    left: 160px;
   }
   
   .about .history-item h4 {
@@ -527,6 +585,23 @@ html {
     padding: 25px 6%;
   }
 
+  .about .brand-bg {
+    padding-top: 200%;
+    background: url(../img/about/about-brand1-m.png) left top/cover no-repeat;
+    background-attachment: fixed;
+  }
+
+  .about .history-item:nth-child(2n+1) {
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+
+  .about .history-item:nth-child(2n) {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+
+
 }
 
 /* 모바일 */
@@ -540,13 +615,13 @@ html {
   .about .title {
     width: auto;
     margin: 0px 20px 200px;
-    font-size: 15vw;
+    font-size: 14.1vw;
   }
 
   .about .nxgram {
     left: auto;
     right: 0;
-    bottom: -160px;
+    bottom: -180px;
   }
   .about .rolltext {
     width: 200px;
@@ -554,7 +629,7 @@ html {
     font-size: 25px;
   }
   .about .title h2 span:nth-child(2) {
-    width: 215px; -webkit-transform: translateX(60px); transform: translateX(60px);
+    width: 55%; -webkit-transform: translateX(60px); transform: translateX(60px);
   }
   
   .about-slide .about-slide-inner {
@@ -587,7 +662,7 @@ html {
   }
   
   .about-slide .about-slide-inner .swiper-pagination{
-    width: 95px;
+    width: 125px;
     left: 20px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -596,7 +671,7 @@ html {
   .about-slide .about-slide-inner .swiper-btn {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    left: 120px;
+    left: 140px;
   }
   
   .about .history-item  {
@@ -664,15 +739,47 @@ html {
     width: 50%;
     text-align: center;
     font-size: 5vw;
+    margin-bottom: 5vw;
   }
 
   .about .brand-info li:nth-child(2) {
     border-right: 0;
-    margin-bottom: 3vw;
   }
 
   .about img.w50 {
     width: 100%;
+  }
+  
+  .about .brand-bg {
+    padding-top: 150%;
+    background: none;
+    position: relative;
+  }
+
+  .about .brand-bg .bg-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .about .brand-bg .bg {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: left top;
+    background-image: url("../img/about/about-brand1-m.png")
+  }
+
+  .about .history-item:nth-child(n) {
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
   }
 
 }

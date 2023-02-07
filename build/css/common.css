@@ -406,22 +406,35 @@ html.loaded:before, html.loaded:after {
 
 /* 모바일 */
 @media screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background: rgba(255, 255, 255, 1);
+    z-index: 55;
+  }
   .mo.toggle-btn {display: block;}
   .header .logo {
-    top:20px; 
-    left: 20px;
-    width: 30px;
+    top:12px; 
+    left: 25px;
+    width: 23px;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
   .header .burger  {
-    right: 20px;
+    top: 15px;
+    right: 25px;
     width: 30px;
   }
   .header .burger span {
     margin: 7px 0px;
   }
-  .header.active .logo {top:20px; -webkit-transform: translateY(0); transform: translateY(0);}
+  .header.active .logo {top:15px; -webkit-transform: translateY(0); transform: translateY(0);}
+  .header.active .burger span:last-child {
+    -webkit-transform: rotate(45deg) translate(-5px,-10px);
+    transform: rotate(45deg) translate(-3px,-8px);
+  }
+
   .header .menu.main {
     left: 20px;
     font-size: 30px;
@@ -443,7 +456,8 @@ html.loaded:before, html.loaded:after {
     font-size: 20px;
     line-height: 35px;
   }
-  .footer {height: 600px; background-position: 50% 70%;}
+  .footer {height: 600px; background: #000 url(../img/work/display/copybg_pc.png) 50% 5%/100% auto no-repeat; }
+  .footer-inner { padding-top: 42%;  }
   .footer-inner .footer-title {  font-size: 35px; line-height: 1.3; }
   .footer-inner .footer-title span {  font-size: 20px; }
   .footer-inner .footer-copy, .footer-inner a { font-size: 14px; }
@@ -471,6 +485,7 @@ html.loaded:before, html.loaded:after {
   top:50%;
   right: 2px;
 }
+
 .topbtn::before {
   display: block;
   content: "";
@@ -483,6 +498,46 @@ html.loaded:before, html.loaded:after {
   top:50%;
   left: 1px;
 }
+
+.loadin {
+  opacity: 0;
+  -webkit-transform: translateY(45px);
+          transform: translateY(45px);
+  -webkit-transition: opacity 0.9s, -webkit-transform 0.6s;
+  transition: opacity 0.9s, -webkit-transform 0.6s;
+  transition: transform 0.6s, opacity 0.9s;
+  transition: transform 0.6s, opacity 0.9s, -webkit-transform 0.6s;
+}
+
+.loadin.left {
+  opacity: 0;
+  -webkit-transform: translate(45px,0);
+          transform: translate(45px,0);
+  -webkit-transition: opacity 0.9s, -webkit-transform 0.6s;
+  transition: opacity 0.9s, -webkit-transform 0.6s;
+  transition: transform 0.6s, opacity 0.9s;
+  transition: transform 0.6s, opacity 0.9s, -webkit-transform 0.6s;
+}
+
+.loadin.right {
+  opacity: 0;
+  -webkit-transform: translate(-45px,0);
+          transform: translate(-45px,0);
+  -webkit-transition: opacity 0.9s, -webkit-transform 0.6s;
+  transition: opacity 0.9s, -webkit-transform 0.6s;
+  transition: transform 0.6s, opacity 0.9s;
+  transition: transform 0.6s, opacity 0.9s, -webkit-transform 0.6s;
+}
+
+.loadin.loaded {
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+
 
 /* animate.js 관련 css*/
 .animated-text span{ display: inline-block;}
@@ -509,3 +564,4 @@ html.loaded:before, html.loaded:after {
 }
 .toggle-btn.on::after { -webkit-transform: rotate(45deg); transform: rotate(45deg); top: 15px;}
 .toggle-btn.on::before { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); top: 15px;}
+

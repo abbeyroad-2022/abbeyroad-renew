@@ -104,7 +104,7 @@ function reveal() {
 	}
 }
 
-
+reveal();
 window.addEventListener('scroll', function () {
 	reveal();
 });

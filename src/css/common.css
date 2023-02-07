@@ -365,21 +365,34 @@ html.loaded:before, html.loaded:after {
 
 /* 모바일 */
 @media screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background: rgba(255, 255, 255, 1);
+    z-index: 55;
+  }
   .mo.toggle-btn {display: block;}
   .header .logo {
-    top:20px; 
-    left: 20px;
-    width: 30px;
+    top:12px; 
+    left: 25px;
+    width: 23px;
     transform: translateY(0);
   }
   .header .burger  {
-    right: 20px;
+    top: 15px;
+    right: 25px;
     width: 30px;
   }
   .header .burger span {
     margin: 7px 0px;
   }
-  .header.active .logo {top:20px; transform: translateY(0);}
+  .header.active .logo {top:15px; transform: translateY(0);}
+  .header.active .burger span:last-child {
+    -webkit-transform: rotate(45deg) translate(-5px,-10px);
+    transform: rotate(45deg) translate(-3px,-8px);
+  }
+
   .header .menu.main {
     left: 20px;
     font-size: 30px;
@@ -427,6 +440,7 @@ html.loaded:before, html.loaded:after {
   top:50%;
   right: 2px;
 }
+
 .topbtn::before {
   display: block;
   content: "";
@@ -464,6 +478,7 @@ html.loaded:before, html.loaded:after {
 }
 
 
+
 /* animate.js 관련 css*/
 .animated-text span{ display: inline-block;}
 ._box {
@@ -488,3 +503,4 @@ html.loaded:before, html.loaded:after {
 }
 .toggle-btn.on::after { transform: rotate(45deg); top: 15px;}
 .toggle-btn.on::before { transform: rotate(-45deg); top: 15px;}
+

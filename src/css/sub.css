@@ -103,7 +103,7 @@ html {
 }
 
 .about-slide .about-slide-inner .swiper-pagination-bullet {
-  margin: 0 !important;
+  margin: 0 2px !important;
   width: 15px;
   height: 30px;
   background: url("../img/about/loading.png") -17px 0 no-repeat;
@@ -129,7 +129,7 @@ html {
   position: absolute;
   top: 90%;
   left:50%;
-  transform: translateX(-4130%);
+  transform: translateX(-4000%);
   width: 15px;
   height: 30px;
   background: url("../img/about/loading.png") -116px 0 no-repeat;
@@ -168,6 +168,7 @@ html {
   font-size: 16px;
   line-height: 2;
   font-weight: 300;
+  opacity: 0.6;
 }
 
 .about-slide .about-slide-inner .type2 {
@@ -334,10 +335,6 @@ html {
   border-right: #707070 1px dashed;
 }
 
-.about .brand-info li:first-child {
-  padding-left: 0px;
-}
-
 .about .brand-info li:last-child {
   border-right: 0;
 }
@@ -415,14 +412,14 @@ html {
   }
 
   .about-slide .about-slide-inner .swiper-pagination{
-    width: 95px;
+    width: 125px;
     left: 40px;
     transform: translateX(0%);
   }
 
   .about-slide .about-slide-inner .swiper-btn {
     transform: translateX(0%);
-    left: 140px;
+    left: 160px;
   }
   .about .history-item, .about .history-item:nth-child(4n) {
     width: 33.3%;
@@ -496,14 +493,14 @@ html {
   }
   
   .about-slide .about-slide-inner .swiper-pagination{
-    width: 95px;
+    width: 125px;
     left: 40px;
     transform: translateX(0%);
   }
 
   .about-slide .about-slide-inner .swiper-btn {
     transform: translateX(0%);
-    left: 140px;
+    left: 160px;
   }
   
   .about .history-item h4 {
@@ -583,7 +580,7 @@ html {
   .about .nxgram {
     left: auto;
     right: 0;
-    bottom: -160px;
+    bottom: -180px;
   }
   .about .rolltext {
     width: 200px;
@@ -624,14 +621,14 @@ html {
   }
   
   .about-slide .about-slide-inner .swiper-pagination{
-    width: 95px;
+    width: 125px;
     left: 20px;
     transform: translateX(0%);
   }
 
   .about-slide .about-slide-inner .swiper-btn {
     transform: translateX(0%);
-    left: 120px;
+    left: 140px;
   }
   
   .about .history-item  {
@@ -709,9 +706,30 @@ html {
   }
   
   .about .brand-bg {
-    padding-top: 200%;
-    background: url(../img/about/about-brand1-m.png) 50% top/cover no-repeat;
-    background-attachment: fixed;
+    padding-top: 150%;
+    background: none;
+    position: relative;
+  }
+
+  .about .brand-bg .bg-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .about .brand-bg .bg {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: left top;
+    background-image: url("../img/about/about-brand1-m.png")
   }
 
   .about .history-item:nth-child(n) {
