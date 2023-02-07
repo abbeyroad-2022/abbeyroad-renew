@@ -322,7 +322,6 @@ html {
   margin-bottom: 59px;
 }
 
-
 .about .brand strong, .about .brand-info strong {
   font-weight: bold;
 }
@@ -363,12 +362,6 @@ html {
 
 .about .brand-info li:last-child {
   border-right: 0;
-}
-
-.about .brand-bg {
-  padding-top: 75%;
-  background: url("../img/about/about-brand1.png") 50% top/cover no-repeat;
-  background-attachment: fixed;
 }
 
 .about img {
@@ -534,12 +527,6 @@ html {
     padding: 25px 6%;
   }
 
-  .about .brand-bg {
-    padding-top: 200%;
-    background: url(../img/about/about-brand1-m.png) left top/cover no-repeat;
-    background-attachment: fixed;
-  }
-
 }
 
 /* 모바일 */
@@ -553,7 +540,7 @@ html {
   .about .title {
     width: auto;
     margin: 0px 20px 200px;
-    font-size: 14.1vw;
+    font-size: 15vw;
   }
 
   .about .nxgram {
@@ -567,7 +554,7 @@ html {
     font-size: 25px;
   }
   .about .title h2 span:nth-child(2) {
-    width: 250px; -webkit-transform: translateX(60px); transform: translateX(60px);
+    width: 215px; -webkit-transform: translateX(60px); transform: translateX(60px);
   }
   
   .about-slide .about-slide-inner {
@@ -677,21 +664,15 @@ html {
     width: 50%;
     text-align: center;
     font-size: 5vw;
-    margin-bottom: 5vw;
   }
 
   .about .brand-info li:nth-child(2) {
     border-right: 0;
+    margin-bottom: 3vw;
   }
 
   .about img.w50 {
     width: 100%;
-  }
-  
-  .about .brand-bg {
-    padding-top: 200%;
-    background: url(../img/about/about-brand1-m.png) 50% top/cover no-repeat;
-    background-attachment: fixed;
   }
 
 }
@@ -900,13 +881,13 @@ html {
   z-index: 3;
   background: rgba(0, 0, 0, 0.0);
 }
- 
+
 .project-subtitle { max-width: 1440px; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
 .project-subtitle h3 {font-size: 40px; font-weight: 600;}
 .project-subtitle p { padding: 50px 0px 0px 240px; font-size: 22px; line-height: 1.5; word-break: keep-all;}
 .project-subtitle.type3 h3 {font-size: 66px; font-weight: 600;}
 .project-subtitle.type3 p {max-width: 710px; margin-left: auto; margin-right: auto; padding-left: 0;}
-.project-subtitle.type2 {-webkit-box-orient: horizontal;-webkit-box-direction: normal;-ms-flex-direction: row;flex-direction: row;}
+.project-subtitle.type2 {-webkit-box-orient: horizontal;-webkit-box-direction: normal;-ms-flex-direction: row;flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
 .project-subtitle.type2 h3 {width: 50%; font-size: 66px; padding-right: 6%;}
 .project-subtitle.type2 p {width: 50%; padding: 0;}
 .next-project {position: relative; top: 6px; z-index: 8; overflow: hidden;}
