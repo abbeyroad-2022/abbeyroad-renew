@@ -755,7 +755,8 @@ html {
   }
   
   .about .brand-bg {
-    padding-top: 180%;
+    padding-top: 0;
+    height: 80vh;
     background: url(../img/about/about-brand1-m.png) left top/100% auto no-repeat;
     background-attachment: fixed;
   }

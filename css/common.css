@@ -419,7 +419,7 @@ html.loaded:before, html.loaded:after {
     width: 30px;
   }
   .header .burger span {
-    margin: 7px 0px;
+    margin: 9px 0px;
   }
   .header.active .logo {top:20px; -webkit-transform: translateY(0); transform: translateY(0);}
   .header .menu.main {
