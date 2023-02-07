@@ -7,7 +7,7 @@
   npm config set strict-ssl false
 3. package.json(node module) 터미널 설치  : npm install
 4. gulpfile.js 작업환경 터널 실행          : gulp dev
-- "src폴더"는 작업용폴더 이고 'dist'는 배포폴더입니다. 
+- "src폴더"는 작업용폴더 이고 'bulid'는 배포폴더입니다. 
 - (*용량이 큰 관계로 원본 파일은 https://github.com/abbeyroad-2022/abbeyroad 에 넣었습니다. )
 
 

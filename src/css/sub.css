@@ -250,7 +250,7 @@ html {
 }
 
 .about .history-item{
-  width: 396px;
+  width: 394px;
   padding-bottom: 120px;
 }
 
@@ -299,6 +299,7 @@ html {
   margin-bottom: 59px;
 }
 
+
 .about .brand strong, .about .brand-info strong {
   font-weight: bold;
 }
@@ -341,6 +342,12 @@ html {
   border-right: 0;
 }
 
+.about .brand-bg {
+  padding-top: 75%;
+  background: url("../img/about/about-brand1.png") 50% top/cover no-repeat;
+  background-attachment: fixed;
+}
+
 .about img {
   width: 100%;
 }
@@ -353,6 +360,35 @@ html {
   max-width: 100%;
   width: auto;
 }
+
+.about .history-item:nth-child(4n+1) {
+  transition-delay: 0.1s;
+}
+
+.about .history-item:nth-child(4n+2) {
+  transition-delay: 0.3s;
+}
+
+.about .history-item:nth-child(4n+3) {
+  transition-delay: 0.5s;
+}
+
+.about .history-item:nth-child(4n) {
+  transition-delay: 0.7s;
+}
+
+.about .organization-item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.about .organization-item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.about .organization-item:nth-child(3) {
+  transition-delay: 0.5s;
+}
+
 
 /* 작은 모니터 */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -391,6 +427,7 @@ html {
   .about .history-item, .about .history-item:nth-child(4n) {
     width: 33.3%;
   }
+
   .about .organization-item {
     width: 33.3%;
     padding-right: 20px;
@@ -398,7 +435,21 @@ html {
   .about .brand-info li {
     padding: 44px 6%;
   }
+
+  .about .history-item:nth-child(3n+1) {
+    transition-delay: 0.1s;
+  }
+
+  .about .history-item:nth-child(3n+2) {
+    transition-delay: 0.3s;
+  }
+
+  .about .history-item:nth-child(3n) {
+    transition-delay: 0.5s;
+  }
+
 }
+
 
 
 /* 테블릿 */
@@ -498,6 +549,21 @@ html {
     padding: 25px 6%;
   }
 
+  .about .brand-bg {
+    padding-top: 200%;
+    background: url(../img/about/about-brand1-m.png) left top/cover no-repeat;
+    background-attachment: fixed;
+  }
+
+  .about .history-item:nth-child(2n+1) {
+    transition-delay: 0.1s;
+  }
+
+  .about .history-item:nth-child(2n) {
+    transition-delay: 0.3s;
+  }
+
+
 }
 
 /* 모바일 */
@@ -511,7 +577,7 @@ html {
   .about .title {
     width: auto;
     margin: 0px 20px 200px;
-    font-size: 15vw;
+    font-size: 14.1vw;
   }
 
   .about .nxgram {
@@ -525,7 +591,7 @@ html {
     font-size: 25px;
   }
   .about .title h2 span:nth-child(2) {
-    width: 215px; transform: translateX(60px);
+    width: 55%; transform: translateX(60px);
   }
   
   .about-slide .about-slide-inner {
@@ -631,15 +697,25 @@ html {
     width: 50%;
     text-align: center;
     font-size: 5vw;
+    margin-bottom: 5vw;
   }
 
   .about .brand-info li:nth-child(2) {
     border-right: 0;
-    margin-bottom: 3vw;
   }
 
   .about img.w50 {
     width: 100%;
+  }
+  
+  .about .brand-bg {
+    padding-top: 200%;
+    background: url(../img/about/about-brand1-m.png) 50% top/cover no-repeat;
+    background-attachment: fixed;
+  }
+
+  .about .history-item:nth-child(n) {
+    transition-delay: 0.1s;
   }
 
 }

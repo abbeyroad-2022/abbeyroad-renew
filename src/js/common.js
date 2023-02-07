@@ -79,6 +79,61 @@ aSkip.forEach(function(i){
     }
   });
 })
+
 last.addEventListener('focusout', function(e){
   header.classList.remove("active"); 
 });
+
+function reveal() {
+	let reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach((el) => {
+    el.classList.add("loadin");
+  });
+
+	for (var i = 0; i < reveals.length; i++) {
+		let windowHeight = window.innerHeight;
+		let elementTop = reveals[i].getBoundingClientRect().top;
+		let elementVisible = 150;
+
+		if (elementTop <= windowHeight - elementVisible) {
+			reveals[i].classList.add("loaded");
+		} else {
+			reveals[i].classList.remove("loaded");
+		}
+	}
+}
+
+
+window.addEventListener('scroll', function () {
+	reveal();
+});
+
+/* observer
+const reveal = document.querySelectorAll(".reveal");
+
+reveal.forEach((el) => {
+  el.classList.add("loadin");
+});
+
+const observerOptions = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.3
+};
+
+function observerCallback(entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("loaded");
+    }
+    else {
+      entry.target.classList.remove("loaded");
+    }
+  });
+}
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+reveal.forEach((el) => observer.observe(el));
+ */
