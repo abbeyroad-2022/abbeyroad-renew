@@ -114,7 +114,7 @@ html {
 }
 
 .about-slide .about-slide-inner .swiper-pagination-bullet {
-  margin: 0 !important;
+  margin: 0 2px !important;
   width: 15px;
   height: 30px;
   background: url("../img/about/loading.png") -17px 0 no-repeat;
@@ -141,8 +141,8 @@ html {
   position: absolute;
   top: 90%;
   left:50%;
-  -webkit-transform: translateX(-4130%);
-          transform: translateX(-4130%);
+  -webkit-transform: translateX(-4000%);
+          transform: translateX(-4000%);
   width: 15px;
   height: 30px;
   background: url("../img/about/loading.png") -116px 0 no-repeat;
@@ -184,6 +184,7 @@ html {
   font-size: 16px;
   line-height: 2;
   font-weight: 300;
+  opacity: 0.6;
 }
 
 .about-slide .about-slide-inner .type2 {
@@ -446,7 +447,7 @@ html {
   }
 
   .about-slide .about-slide-inner .swiper-pagination{
-    width: 95px;
+    width: 125px;
     left: 40px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -455,7 +456,7 @@ html {
   .about-slide .about-slide-inner .swiper-btn {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    left: 140px;
+    left: 160px;
   }
   .about .history-item, .about .history-item:nth-child(4n) {
     width: 33.3%;
@@ -533,7 +534,7 @@ html {
   }
   
   .about-slide .about-slide-inner .swiper-pagination{
-    width: 95px;
+    width: 125px;
     left: 40px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -542,7 +543,7 @@ html {
   .about-slide .about-slide-inner .swiper-btn {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    left: 140px;
+    left: 160px;
   }
   
   .about .history-item h4 {
@@ -665,7 +666,7 @@ html {
   }
   
   .about-slide .about-slide-inner .swiper-pagination{
-    width: 95px;
+    width: 125px;
     left: 20px;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -674,7 +675,7 @@ html {
   .about-slide .about-slide-inner .swiper-btn {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    left: 120px;
+    left: 140px;
   }
   
   .about .history-item  {
