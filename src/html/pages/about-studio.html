@@ -30,7 +30,7 @@
             <span>there is</span>
             <span>finding</span>
             <span>this is</span>
-            <span class="nxgram rellax" data-rellax-speed="5" data-rellax-mobile-speed="1" ><img src="../img/about/abbeyroad.png" alt="abbey road"></span>
+            <span class="nxgram rellax" data-rellax-speed="5" data-rellax-xs-speed="1" data-rellax-mobile-speed="1" data-rellax-tablet-speed="4" data-rellax-desktop-speed="5"><img src="../img/about/abbeyroad.png" alt="abbey road"></span>
         </h2>
       </div>
 
@@ -224,7 +224,7 @@
       <div class="bg-gray pt200">
         <div class="sub-inner">
           <h3 class="h3-tit reveal">Organization</h3>
-          <div class="organization-list fl fl-bet-top">
+          <div class="organization-list fl fl-bet-top ovx-hidden">
             <div class="organization-item reveal left">
               <h4>Strategy Planning Group</h4>
               <ul>
@@ -263,7 +263,7 @@
       <!-- //Organization -->
 
       <!-- Brand -->
-      <div class="sub-inner mt200 mb200 brand">
+      <div class="sub-inner mt200 mb200 brand ovx-hidden">
         <h3 class="h3-tit reveal">Brand Identity</h3>
         <strong class="fs32 reveal left">Communications Group “ abbey road”</strong>
         <p class="pb120 reveal left">
@@ -288,22 +288,24 @@
 
       <!-- brand-info -->
       <div class="bg-gray pt200 ">
-        <div class="sub-inner brand-info">
+        <div class="sub-inner brand-info ovx-hidden">
           <p class="mb100 reveal">
            <strong>애비로드커뮤니케이션즈</strong>는<br/>
            디지털에서의 모든 기술은 대중들의 즐거운 경험을 위한 것이며 그것은 혁신적이지만 사용하기 쉽고 직관적이어야하며 
            논리에 근거한 디자인이어야 한다는 것입니다.<br/><br/>
            실험적이고 혁신적이지만 누구나 편하게 즐겼던 비틀즈의 마지막 앨범 abbeyroad에 담긴 그들의 생각처럼 …
           </p>
-          <ul class="fl fl-left-center mb200 reveal left">
+          <ul class="fl fl-center mb200 reveal left">
             <li>Easy</li>
             <li>Intuitive</li>
             <li>Logical</li>
             <li>Delight</li>
           </ul>
-          <img src="../img/about/about-brand2.png" alt="abbey road" class="mw100 reveal right">
+          <div class="t-center">
+            <img src="../img/about/about-brand2.png" alt="abbey road" class="mw100 reveal right">
+          </div>
         </div>
-        <div class="fl fl-wrap mt200">
+        <div class="fl fl-wrap mt200 ">
           <picture class="next-navigation w100 t-center reveal" style="margin: -5px 0">
               <source
                 srcset="../img/about/about-brand3-m.png"
@@ -353,12 +355,12 @@
     <script type="text/javascript" src="../js/rellax.js"></script>
     <script>
       var rellax = new Rellax('.rellax', {
+        breakpoints: [576, 768, 1024],
         // center: true
         callback: function (position) {
           // callback every position change
           //console.log(position);
         },
-        breakpoints: [576, 768, 1024]
       });
     </script>
 
