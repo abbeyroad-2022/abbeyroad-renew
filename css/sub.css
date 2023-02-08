@@ -634,14 +634,16 @@ html {
   }
   .about .title {
     width: auto;
-    margin: 0px 20px 70vw;
+    margin: 0;
+    padding: 0px 20px 70vw;
     font-size: 14.1vw;
   }
 
   .about .nxgram {
     left: auto;
     right: 0;
-    bottom: -65vw;
+    bottom: 0.2vw;
+    text-align: center;
   }
   
   .about .nxgram2 {
@@ -649,6 +651,8 @@ html {
     top: 84vw;
     width: 58%;
   }
+
+  .about .nxgram img {max-width: 80%;  }
 
   .about .rolltext {
     width: 200px;
