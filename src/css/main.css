@@ -17,6 +17,7 @@
   letter-spacing: -0.14rem;
   color:#000000;
 }
+.main .po-main-title img { max-width: 100%;}
 .main .po-main-title2 {
   font-size: 0.9rem;
   line-height: 2.9rem;
@@ -33,6 +34,7 @@
     line-height: 1.2;
     letter-spacing: -0.5vw;
   }
+  .main .po-main-title img { max-width: 90%;}
 }
 
 /* 스크롤 */

@@ -69,8 +69,8 @@ html {
   flex-direction: column;
 }
 
-.about .title h2 span:nth-child(2) {
-  width: 500px;  transform: translateX(200px);  
+.about .title h2 span:nth-child(2) ,.about .title h2 span:nth-child(4) {
+  padding-left: 160px;
 }
 
 .about .nxgram {
@@ -79,7 +79,13 @@ html {
   bottom: -400px;
 }
 
-.about .nxgram img{
+.about .nxgram2 {
+  position: absolute;
+  left: 950px;
+  top: 300px;
+}
+
+.about .nxgram img, .about .nxgram2 img{
   max-width: 100%
 }
 
@@ -405,9 +411,14 @@ html {
     left: 390px;  
   }
 
-  .about .title h2 span:nth-child(2) {
-    width: 400px;
-    transform: translateX(120px);  
+  .about .nxgram2 {
+    top: 198px;
+    left: 630px;
+    max-width: 30%;
+  }
+
+  .about .title h2 span:nth-child(2) ,.about .title h2 span:nth-child(4) {
+    padding-left: 100px;
   }
 
   .about-slide .about-slide-inner .swiper-pagination{
@@ -465,13 +476,20 @@ html {
     left: 270px;
     bottom: -190px;  
   }
+
+  .about .nxgram2 {
+    top: 93px;
+    left: 60%;
+    max-width: 36%;
+  }
+
   .about .rolltext {
     padding-left: 40px;
     font-size: 35px;
   }
-  .about .title h2 span:nth-child(2) {
-    width: 290px;
-    transform: translateX(80px);
+  
+  .about .title h2 span:nth-child(2) ,.about .title h2 span:nth-child(4) {
+    padding-left: 70px;
   }
 
   .about-slide .about-slide-inner .type1 .t-wrap {
@@ -572,22 +590,29 @@ html {
   }
   .about .title {
     width: auto;
-    margin: 0px 20px 200px;
+    margin: 0px 20px 70vw;
     font-size: 14.1vw;
   }
 
   .about .nxgram {
     left: auto;
     right: 0;
-    bottom: -160px;
+    bottom: -65vw;
   }
+  
+  .about .nxgram2 {
+    left: 21%;
+    top: 84vw;
+    width: 58%;
+  }
+
   .about .rolltext {
     width: 200px;
     padding-left: 20px;
     font-size: 25px;
   }
-  .about .title h2 span:nth-child(2) {
-    width: 55%; transform: translateX(60px);
+  .about .title h2 span:nth-child(2) ,.about .title h2 span:nth-child(4) {
+    padding-left: 15vw;
   }
   
   .about-slide .about-slide-inner {
