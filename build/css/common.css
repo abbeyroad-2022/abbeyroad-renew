@@ -316,7 +316,7 @@ html.loaded:before, html.loaded:after {
   height: 100vh;
   background: #000 url("../img/work/display/copybg_pc.png") 50% top/90% auto no-repeat;
   background-attachment: fixed;
-  z-index: 9;
+  z-index: 4;
 }
 
 .footer-inner {
@@ -365,6 +365,40 @@ html.loaded:before, html.loaded:after {
   }
 }
 
+/* topbtn */
+.topbtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 9;
+}
+.topbtn::after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  position: absolute;
+  top:50%;
+  right: 2px;
+}
+.topbtn::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  position: absolute;
+  top:50%;
+  left: 1px;
+}
 
 
 
@@ -407,21 +441,30 @@ html.loaded:before, html.loaded:after {
 /* 모바일 */
 @media screen and (max-width: 767px) {
   .mo.toggle-btn {display: block;}
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    top: 0;
+    background: #fff;
+    z-index: 5;
+  }
   .header .logo {
-    top:20px; 
+    top:11px; 
     left: 20px;
-    width: 30px;
+    width: 25px;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
   .header .burger  {
+    top: 11px;
     right: 20px;
     width: 30px;
   }
   .header .burger span {
-    margin: 7px 0px;
+    margin: 9px 0px;
   }
-  .header.active .logo {top:20px; -webkit-transform: translateY(0); transform: translateY(0);}
+  .header.active .logo {top:11px; -webkit-transform: translateY(0); transform: translateY(0);}
   .header .menu.main {
     left: 20px;
     font-size: 30px;
@@ -448,42 +491,14 @@ html.loaded:before, html.loaded:after {
   .footer-inner .footer-title {  font-size: 35px; line-height: 1.3; }
   .footer-inner .footer-title span {  font-size: 20px; }
   .footer-inner .footer-copy, .footer-inner a { font-size: 14px; }
+
+    
+  .topbtn {
+    bottom: 20px;
+    right: 20px;
+  }
 }
 
-
-.topbtn {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  z-index: 9;
-}
-.topbtn::after {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 1px;
-  background-color: #000;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-  position: absolute;
-  top:50%;
-  right: 2px;
-}
-.topbtn::before {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 1px;
-  background-color: #000;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
-  position: absolute;
-  top:50%;
-  left: 1px;
-}
 
 .loadin {
   opacity: 0;

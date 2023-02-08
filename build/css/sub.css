@@ -357,10 +357,6 @@ html {
   border-right: #707070 1px dashed;
 }
 
-.about .brand-info li:first-child {
-  padding-left: 0px;
-}
-
 .about .brand-info li:last-child {
   border-right: 0;
 }
@@ -754,9 +750,8 @@ html {
   }
   
   .about .brand-bg {
-    padding-top: 200%;
+    padding-top: 180%;
     background: url(../img/about/about-brand1-m.png) 50% top/cover no-repeat;
-    background-attachment: fixed;
   }
 
   .about .history-item:nth-child(n) {
