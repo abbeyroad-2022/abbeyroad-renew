@@ -336,7 +336,7 @@ html.loaded:before, html.loaded:after {
   line-height: 1.6;
 }
 
-.footer-inner .footer-title {max-width: 730px; padding-bottom: 40px; font-size: 60px; line-height: 68px; font-weight: bold; }
+.footer-inner .footer-title {max-width: 730px; padding-bottom: 40px; font-size: 60px; line-height: 1.3; font-weight: bold; }
 .footer-inner .footer-copy {padding-top: 40px;}
 .footer-inner .footer-copy { font-size: 13px; }
 .footer-inner a { color: #fff; }
@@ -488,8 +488,9 @@ html.loaded:before, html.loaded:after {
   }
   .footer {height: 600px; background: #000 url(../img/work/display/copybg_pc.png) 50% 5%/100% auto no-repeat; }
   .footer-inner { padding-bottom: 5%;  }
-  .footer-inner .footer-title {  font-size: 35px; line-height: 1.3; }
+  .footer-inner .footer-title {  font-size: 30px; line-height: 1.3; max-width: 85%; }
   .footer-inner .footer-title span {  font-size: 20px; }
+  .footer-inner p { font-size: 16px; }
   .footer-inner .footer-copy, .footer-inner a { font-size: 14px; }
 
     

@@ -172,7 +172,7 @@ html {
   /* justify-content: space-around; */
 }
 .about-slide .about-slide-inner .type1 .t-wrap {
-  padding-top: 10vh;
+  padding-top: 7vh;
 }
 
 .about-slide .about-slide-inner .type1 h3 {
@@ -191,6 +191,10 @@ html {
   line-height: 2;
   font-weight: 300;
   opacity: 0.7;
+}
+
+.about-slide .about-slide-inner .type2 p {
+  max-width: 500px;
 }
 
 .about-slide .about-slide-inner .type2 {
