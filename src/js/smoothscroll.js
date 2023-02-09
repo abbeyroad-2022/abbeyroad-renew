@@ -49,16 +49,24 @@ class Smooth {
   }
 
   setHeight() {
-    document.body.style.height = `${this.dom.content.getBoundingClientRect().height}px`;
-    document.querySelector(".sub").style.height = `${this.dom.content.getBoundingClientRect().height}px`;
+    if(document.querySelector(".sub").classList.contains("portfolio")){
+      setTimeout(function() {
+        let containerHeight = document.querySelector(".container").getBoundingClientRect().height;
+        document.body.style.height = `${containerHeight+80}px`;
+        document.querySelector(".sub").style.height = `${containerHeight+80}px`;
+      }, 500);
+    } else {
+      document.body.style.height = `${this.dom.content.getBoundingClientRect().height}px`;
+      document.querySelector(".sub").style.height = `${this.dom.content.getBoundingClientRect().height}px`;
+    }
   }
 
-  resize() {
-    setTimeout(function() {
-      this.setHeight()
-    }, timeout);
-    this.scroll()
-  }
+  // resize() {
+  //   setTimeout(function() {
+  //     this.setHeight()
+  //   }, timeout);
+  //   this.scroll()
+  // }
 
   preload() {
     imagesLoaded(this.dom.content, (instance) => {
