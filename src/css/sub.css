@@ -1024,8 +1024,21 @@ html {
 .next-project a.bg-spacec {background-image: url("../img/work/detail/spacec/n1.png");}
 .next-project a.bg-mshop {background-image: url("../img/work/detail/mshop/n1.png");}
 .next-project a.bg-shinhan {background-image: url("../img/work/detail/shinhan/n1.png");}
+.next-project a.bg-kbstar {background-image: url("../img/work/detail/kbstar/n1.png");}
 
 
+.grid.g4 > .lottie-wrap {
+  width: 50%;
+  height: 859px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.grid.g4 > .lottie-wrap .lottie {
+  border: 1px solid #d0d0d0;
+  padding: 6%;
+}
 
 /* 작은 모니터  */
 @media screen and (min-width: 1025px) and (max-width: 1450px) {
@@ -1077,6 +1090,11 @@ html {
   .next-project a.bg-spacec {background-image: url("../img/work/detail/spacec/m-n1.png");}
   .next-project a.bg-mshop {background-image: url("../img/work/detail/mshop/m-n1.png");}
   .next-project a.bg-shinhan {background-image: url("../img/work/detail/shinhan/m-n1.png");}
+  .next-project a.bg-kbstar {background-image: url("../img/work/detail/kbstar/m-n1.png");}
+
+  .grid.g4 > .lottie-wrap {
+    height: 330px;
+  }
 }
 
 .grid {
@@ -1101,11 +1119,6 @@ html {
   justify-content: center;
   align-items: center;
 }
-
-
-
-
-
 
 /* test */
 
