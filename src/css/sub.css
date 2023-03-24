@@ -1026,6 +1026,8 @@ html {
 .next-project a.bg-shinhan {background-image: url("../img/work/detail/shinhan/n1.png");}
 .next-project a.bg-kbstar {background-image: url("../img/work/detail/kbstar/n1.png");}
 .next-project a.bg-gs {background-image: url("../img/work/detail/gs/n1.png");}
+.next-project a.bg-wh {background-image: url("../img/work/detail/wh/n1.png");}
+.next-project a.bg-ocean {background-image: url("../img/work/detail/ocean/n1.png");}
 
 
 .grid.g4 > .lottie-wrap {
@@ -1092,6 +1094,8 @@ html {
   .next-project a.bg-mshop {background-image: url("../img/work/detail/mshop/m-n1.png");}
   .next-project a.bg-shinhan {background-image: url("../img/work/detail/shinhan/m-n1.png");}
   .next-project a.bg-kbstar {background-image: url("../img/work/detail/kbstar/m-n1.png");}
+  .next-project a.bg-wh {background-image: url("../img/work/detail/wh/m-n1.png");}
+  .next-project a.bg-ocean {background-image: url("../img/work/detail/ocean/m-n1.png");}
 
   .grid.g4 > .lottie-wrap {
     height: 330px;
