@@ -183,6 +183,19 @@ html.loaded:before, html.loaded:after {
   transition: all 1s;  
 }
 
+.header .copy-link {
+  display:block;
+  position: fixed;
+  top : 39px;
+  right : 110px;
+  z-index: 11;
+  text-decoration: underline;
+  text-underline-position: under;
+  background: transparent;
+  color: inherit;
+  font-size : 19.8px
+}
+
 .header .logo {
   position: fixed;
   top: 30px;
@@ -261,6 +274,7 @@ html.loaded:before, html.loaded:after {
   color: #282828;
   -webkit-transition: all 1s;
   transition: all 1s;
+  font-size: 58px;
 }
 
 .header .menu.main a:hover {
@@ -449,6 +463,12 @@ html.loaded:before, html.loaded:after {
     background: #fff;
     z-index: 5;
   }
+  .header .copy-link {
+    top : 23px;
+    font-size: 16px;
+    right : 70px;
+  }
+
   .header .logo {
     top:11px; 
     left: 20px;
@@ -481,7 +501,7 @@ html.loaded:before, html.loaded:after {
     margin: 20px 0px;
   }
   .header .menu.txt {
-    top: 310px;
+    top: 430px;
     left: 20px;
     font-size: 20px;
     line-height: 35px;
@@ -498,8 +518,15 @@ html.loaded:before, html.loaded:after {
     bottom: 20px;
     right: 20px;
   }
-}
 
+  .header .menu.main a {
+    color: #282828;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    font-size: 48px;
+  }
+  
+}
 
 .loadin {
   opacity: 0;
