@@ -186,13 +186,14 @@ html.loaded:before, html.loaded:after {
 .header .copy-link {
   display:block;
   position: fixed;
-  top : 38px;
+  top : 39px;
   right : 110px;
   z-index: 11;
   text-decoration: underline;
   text-underline-position: under;
   background: transparent;
   color: inherit;
+  font-size : 19.8px
 }
 
 .header .logo {
