@@ -1006,6 +1006,10 @@ html {
 .project-subtitle.type2 {-webkit-box-orient: horizontal;-webkit-box-direction: normal;-ms-flex-direction: row;flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
 .project-subtitle.type2 h3 {width: 50%; font-size: 66px; padding-right: 6%;}
 .project-subtitle.type2 p {width: 50%; padding: 0;}
+.project-subtitle .pd-none {padding : 0px;}
+.project-subtitle .mt40 {margin-top: 40px;}
+.project-subtitle.mt180 {margin-top: 180px;}
+.project-subtitle.mt220 {margin-top: 220px;}
 .next-project {position: relative; top: 6px; z-index: 4; overflow: hidden;}
 .next-project a picture {-webkit-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
 .next-project a::after {
@@ -1094,6 +1098,7 @@ html {
 .next-project a.bg-gs {background-image: url("../img/work/detail/gs/n1.png");}
 .next-project a.bg-wh {background-image: url("../img/work/detail/wh/n1.png");}
 .next-project a.bg-ocean {background-image: url("../img/work/detail/ocean/n1.png");}
+.next-project a.bg-gsc-odt {background-image: url("../img/work/detail/gsc-odt/n1.png");}
 
 
 .grid.g4 > .lottie-wrap {
@@ -1136,6 +1141,8 @@ html {
   .project-subtitle p { padding: 30px 0px 0px 130px; font-size: 18px; }
   .project-subtitle.type3 h3 {font-size: 35px; }
   .project-subtitle.type2 h3 {font-size: 35px; }
+  .project-subtitle.mt180 {margin-top: 90px;}
+  .project-subtitle.mt220 {margin-top: 110px;}
 }
 
 /* 모바일 */
@@ -1153,6 +1160,8 @@ html {
   .project-subtitle.type2 h3 {font-size: 28px; }
   .project-subtitle.type2 {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
   .project-subtitle.type2 h3, .project-subtitle.type2 p {width: 100%; padding-top: 20px;}
+  .project-subtitle.mt180 {margin-top: 70px;}
+  .project-subtitle.mt220 {margin-top: 90px;}
   
   .next-project.v2 a{padding-top: 54%;}
   .next-project a.bg-6nails {background-image: url("../img/work/detail/6nails/m-n1.png");}
@@ -1168,6 +1177,7 @@ html {
   .next-project a.bg-kbstar {background-image: url("../img/work/detail/kbstar/m-n1.png");}
   .next-project a.bg-wh {background-image: url("../img/work/detail/wh/m-n1.png");}
   .next-project a.bg-ocean {background-image: url("../img/work/detail/ocean/m-n1.png");}
+  .next-project a.bg-gsc-odt {background-image: url("../img/work/detail/gsc-odt/m-n1.png");}
 
   .grid.g4 > .lottie-wrap {
     height: 330px;
