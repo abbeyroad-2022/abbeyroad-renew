@@ -7,17 +7,16 @@
     <title>abbeyroad</title>
     <meta content="The main page." name="description">
     <!-- Styles-->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/fullpage/jquery.fullpage.min.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub.css">
     
     <!-- Favicon-->
-    <link rel="icon" href="img/favicon/favicon2.ico">
-    <link rel="mask-icon" href="img/favicon/favicon2.ico" color="#ffffff">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" href="../img/favicon/favicon2.ico">
+    <link rel="mask-icon" href="../img/favicon/favicon2.ico" color="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
     <meta name="theme-color" content="#ffffff">
+  
     <!-- <link rel="icon" href="../img/favicon/favicon.svg"> 
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">-->
@@ -25,13 +24,6 @@
 
     <!-- <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff"> -->
-
-    <!-- Script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-    <script src="js/fullpage/jquery.fullpage.min.js"></script>
-    <script src="js/fullpage/jquery.fullpage.extensions.min.js"></script>
-
     
     <script>
       $(document).ready(function() {
@@ -57,440 +49,211 @@
   <div class="wrapper">
     
     <!-- Header -->
-    <header class="header" id="header">
-      <h1>
-        <a class="brand logo" href="index.html">
-          <img class="default" src="img/logo.svg" alt="abbeyroad">
-        </a>  
-      </h1>
-      <a class="copy-link" href="https://www.abbeyroad.asia/files/down/abbeyroad_2022.pdf">Company Profile</a>
-      <div class="burger"></div>
-      <div class="nav" id="nav">
-        <ul class="menu main font-ng">
-          <li class="menu-item"><a class="menu-link smooth" href="pages/about-studio.html">하는 일</a></li>
-          <li class="menu-item"><a class="menu-link smooth" href="pages/portfolio-filters.html">프로젝트</a></li>
-          <li class="menu-item"><a class="menu-link smooth" href="pages/contact.html">문의하기</a></li>
-          <li class="menu-item last"><a class="menu-link smooth" href="https://www.abbeyroad.asia/files/down/abbeyroad_2022.pdf">회사소개서</a></li>
-        </ul>
-      </div>
-      <div class="menu txt">
-        <p>Connecting People,<br/>Create a New Culture</p>
-        <!-- <a class="menu-link anchor-link" href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
-        <a class="menu-link anchor-link" href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
-        <a class="menu-link anchor-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>        -->
-      </div>
-      <a class="burger"></a>
-    </header>
+  <header class="header" id="header">
+    <h1>
+      <a class="brand logo" href="/index.html">
+        <img class="default" src="/img/logo.svg" alt="abbeyroad">
+      </a>  
+    </h1>
+    <a class="copy-link" href="https://www.abbeyroad.asia/files/down/abbeyroad_2022.pdf">Company Profile</a>
+    <div class="burger"></div>
+    <div class="nav" id="nav">
+      <ul class="menu main font-ng">
+        <li class="menu-item"><a class="menu-link smooth" href="/pages/about-studio.html">하는 일</a></li>
+        <li class="menu-item"><a class="menu-link smooth" href="/pages/portfolio-filters.html">쇼케이스</a></li>
+        <li class="menu-item"><a class="menu-link smooth" href="/pages/contact.html">문의하기</a></li>
+        <li class="menu-item last"><a class="menu-link smooth" href="https://www.abbeyroad.asia/files/down/abbeyroad_2022.pdf">회사소개서</a></li>
+      </ul>
+    </div>
+    <div class="menu txt">
+      <p>Connecting People,<br/>Create a New Culture</p>
+      <!-- <a class="menu-link anchor-link" href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+      <a class="menu-link anchor-link" href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+      <a class="menu-link anchor-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>        -->
+    </div>
+    <a class="burger"></a>
+  </header>
     <!-- //Header-->
 
-    <div class="po-screen" id="fullpage">  
-      <div class="section rl">
-        <div class="po-main-details ">
-          <!-- <div class="po-main-title">ABBEYROAD<br/>EXPERIENCE</div>-->
-          <div class="po-main-title">
-            <img src="img/about/abbeyroad.png" alt="abbeyroad">
-          </div>
-          <div class="po-main-title2">SINCE 2013</div>
-          <div class="scroll-downs">
-              <div class="mousey">
-                  <div class="scroller"></div>
+    <div class="wrapper">
+      <div class="content portfolio sub" id="content">
+        <div data-scroll>
+          <div data-scroll-content>
+            
+            <!-- container -->
+            <div class="container">
+
+              <div class="portfolio-title ">
+                <h2 class="animated-text v2">프로젝트를 통한 경험이<br>가장 큰 자산입니다.</h2>
               </div>
-              <div class="scroll-text">scroll down</div>
-          </div>               
-        </div>
-      </div>
+              <span class="toggle-btn mo"></span>
+              <ul id="grid-filter">
+                <li data-category="*" class="on">All</li>
+                <li data-category="UX">UX</li>
+                <li data-category="BX">BX</li>
+              </ul>
 
-      <!-- [구축]202211_신한투자증권Mydata -->
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 01</span>
-            <p class="title">신한 Alpha MyData <span class="pc-tit">내 자산정보를 한 곳에 모아 관리할 수 있는 서비스</span></p>
-            <p class="des">
-              신한 alpha의 Mydata 서비스는 은행계좌, 신용카드, 대출 등 금융회사별 내 금융정보를 모아 한눈에 관리할 수 있는 서비스 입니다. 내 금융생활에 대한 전문적인 분석을 받고 똑똑한 자산관리를 시작할 수 있습니다.
-            </p>
-            <a class="main-full-link" href="pages/project-shinhan.html" >
-              View work
-            </a>
-          </div>
-          <div class="main-full-img">
-            <img src="img/portfolio/phone-09-2.png" alt="shinhan">
-          </div>
-        </div>
-      </div>
+              <div id="masonry-grid">
+                <div class="grid-sizer"></div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-shinhan.html">
+                    <img src="/img/work/detail/shinhan/th.png" alt="신한 Alpha Mydata Application">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">신한 Alpha Mydata Application<span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-gs.html">
+                    <img src="/img/work/detail/gs/gs-th.png" alt="gs">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">GS Energy Plus EV<span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-wh.html">
+                    <img src="/img/work/detail/wh/wh-th.png" alt="wh">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">Wormhall<span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-ocean.html">
+                    <img src="/img/work/detail/ocean/oc-th.png" alt="oc">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">OceanTechnology<span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-kbstar.html">
+                    <img src="/img/work/detail/kbstar/th.png" alt=">KB스타 기업뱅킹">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">KB스타 기업뱅킹 : 스마트한 기업서비스<span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-gsc-odt.html">
+                    <img src="/img/work/detail/gsc-odt/th.png" alt=">gsc-odt">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">GSC 셀프 ODT<span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-gsc-odt.html">
+                    <img src="/img/work/detail/mshop/th.png" alt="M-shop Application">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">M-shop Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-mobillink.html">
+                    <img src="/img/work/detail/mobillink/th.png" alt="Mobillink Responsive Web">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">Mobillink Responsive Web <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-ocha.html">
+                    <img src="/img/work/detail/ocha/th.png" alt="O Cha Application">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">O Cha Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-144cake.html">
+                    <img src="/img/work/detail/144cake/th.png" alt="144 Cake Application">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">144 Cake Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-endigo.html">
+                    <img src="/img/work/detail/endigo/th.png" alt="Endigo Application ">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">Endigo Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-spacec.html">
+                    <img src="/img/work/detail/spacec/th.png" alt="Space C Mobile Web">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">Space C Mobile Web <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="#">
+                    <img src="/img/work/detail/fredit/th.png" alt="Fredit Web">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">Fredit Web <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-6nails.html">
+                    <img src="/img/work/detail/6nails_web/th.png" alt="6Nails Web ">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">6Nails Web <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 BX">
+                  <a class="thumb space-2 animated" href="/pages/project-6nails.html">
+                    <img src="/img/work/detail/6nails/th.png" alt="6Nails Product Design">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">6Nails Product Design <span>BX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 BX">
+                  <a class="thumb space-2 animated" href="/pages/project-cyclean.html">
+                    <img src="/img/work/detail/cyclean/th.png" alt="Cyclean Branding">
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">Cyclean Branding <span>BX</span></strong>
+                  </a>
+                </div>
+              </div>
 
-      <!-- [구축]202201_에너지플러스EV -->
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 02</span>
-            <p class="title">GS Caltex EV / GSITM RFC<span class="pc-tit">친환경 드라이브를 위한 더 빠르고 더 편한 전기차 충전 서비스</span></p>
-            <p class="des">
-              ‘에너지 플러스 EV’ 는 GS칼텍스의 전기차 충전 서비스로, 전국 전기차의 간편 충전을 제공하는 서비스입니다.
-              이 앱은 전기차 간편 충전, 충전기 정보 검색, 앱 고객 대상 충전비 할인 등 서비스를 제공합니다.
-            </p>
-            <a class="main-full-link" href="pages/project-gs.html" >
-              View work
-            </a>
-          </div>
-          <div class="main-full-img">
-            <img src="img/portfolio/responsible-gs01.png" class="pc-pic" alt="gs">
-            <img src="img/portfolio/responsible-gs03.png" class="mobile-pic" alt="gs">
+            </div>
+            <!-- //container -->
           </div>
         </div>
-      </div>
-
-      <!-- [구축]202110_웜홀 -->
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 03</span>
-            <p class="title">Wormhall<span class="pc-tit">스마트 워크플레이스 서비스</span></p>
-            <p class="des">
-              웜홀(Wormhall)은 모든 것이 서로 연결되는 Hyper Connected World 체험 공간이자 스마트 워크플레이스입니다.
-              파트너 기업의 제품/서비스 전시 및 홍보 이벤트를 위해 항상 열려있으며, 모든 공간은 업무, 교육, 세미나, 영상 콘텐츠 제작 등
-              목적에 맞게 자유롭게 이용할 수 있습니다.
-            </p>
-            <a class="main-full-link" href="pages/project-wh.html" >
-              View work
-            </a>
-          </div>
-          
-          <div class="main-full-img big">
-            <img src="img/portfolio/responsible-wjh-pc.png" class="pc-pic" alt="wh-pc">
-            <img src="img/portfolio/responsible-wjh-mo.png" class="mobile-pic" alt="wh-mo">
-          </div>
-        </div>
-      </div>
-
-      <!-- [구축]202107_오우션테크놀로지 -->
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 04</span>
-            <p class="title">OceanTechnology <span class="pc-tit">IT 부품 및 기술지원 서비스</span></p>
-            <p class="des">
-              오우션테크놀러지(Ocean Technology)는 세계 최고의 하드디스크 제조사인 씨게이트 테크놀러지의 한국지사 대행을 목적으로 설립되었으며, 국내외 유수의 반도체, 메모리, SoC에 이르는 다양한 전자 부품 및 소재를 국/내외 제조사에 디자인 단계부터 설계 및 품질 기술 지원까지 서비스를 지원하고 있습니다.
-            </p>
-            <a class="main-full-link" href="pages/project-ocean.html" >
-              View work
-            </a>
-          </div>
-          <div class="main-full-img big">
-            <img src="img/portfolio/responsible-ocean-pc.png" class="pc-pic" alt="oc">
-            <img src="img/portfolio/responsible-ocean-mo.png" class="mobile-pic" alt="oc">
-          </div>
-        </div>
-      </div>  
-      
-      <!-- [구축]202105_KB스타기업뱅킹(대외비) -->
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 05</span>
-            <p class="title">KB스타 기업뱅킹 <span class="pc-tit">스마트한 기업서비스</span></p>
-            <p class="des">
-              KB스타 기업뱅킹은 기업을 위한 뱅킹서비스를 제공합니다. 결재 관리, 급여처리, 잔고 및 거래 내역 관리 등의 금융 업무를 영업점에 가지 않아도 24시간 365일 손쉽게 처리할 수 있습니다.
-            </p>
-            <a class="main-full-link" href="pages/project-kbstar.html" >
-              View work
-            </a>
-          </div>
-          
-          <div class="main-full-img big">
-            <img src="img/portfolio/responsible-kbstar01.png" class="pc-pic" alt="kbstar">
-            <img src="img/portfolio/responsible-kbstar03.png" class="mobile-pic" alt="kbstar">
-          </div>
-        </div>
-      </div>
-      
-      <!-- [구축]202104_GSC 셀프 ODT : 미래형 주유소 서비스(대외비) -->
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 06</span>
-            <p class="title">GSC 셀프 ODT  <span class="pc-tit">미래형 주유소 서비스</span></p>
-            <p class="des">
-              KB스타 기업뱅킹은 기업을 위한 뱅킹서비스를 제공합니다. 결재 관리, 급여처리, 잔고 및 거래 내역 관리 등의 금융 업무를 영업점에 가지 않아도 24시간 365일 손쉽게 처리할 수 있습니다.
-            </p>
-            <a class="main-full-link" href="pages/project-gsc-odt.html" >
-              View work
-            </a>
-          </div>
-          
-          <div class="main-full-img big">
-            <img src="img/portfolio/responsible-gsc-odt-pc.png" class="pc-pic" alt="gsc-odt">
-            <img src="img/portfolio/responsible-gsc-odt-mo.png" class="mobile-pic" alt="gsc-odt">
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 07</span>
-            <p class="title">M-Shop <span class="pc-tit">VIP를 위한 멀티 명품샵</span></p>
-            <p class="des">
-              M-Shop은 명품 및 하이브랜드 전문몰입니다.
-                  명품을 구매하는 루트가 다변화되어지는 환경에서 다양한 서비스를 제공하는 것 뿐만 아니라 구매패턴을 분석하여 사용자들의 이탈률을 줄이고 집중도를 높이기 위해 인터페이스의 동적구성과 히스토리를 강화하였습니다.
-            </p>
-            <a class="main-full-link" href="pages/project-mshop.html" >
-              View work
-            </a>
-          </div>
-          
-          <div class="main-full-img">
-            <img src="img/portfolio/phone-08.gif" alt="M-Shop">
-          </div>
-        </div>
-      </div>
-      
-      
-      <div class="section main-full-video">
-          <iframe title="M-Shop" src="https://player.vimeo.com/video/726282539?h=dc8909a7a3&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-          <!-- <iframe  src="https://www.youtube.com/embed/11cta61wi0g?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          <div class="iframe-scroll"></div>
-      </div>
-      
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 08</span>
-            <p class="title">Mobillink <span class="pc-tit">RV, 모터홈, 거래 플랫폼</span></p>
-            <p class="des">
-              Mobillink는 RV, Motorhome, Camperban 거래 플랫폼입니다. 캠핑패턴,주차조건,캠핑선호지역,캠핑인원수,예산 등 다양한 조건에 따른 검색으로 소비자들의 캠핑패턴에 맞는 차량을 제안합니다. 딜러와의 매칭으로 검색 결과에 따른 차량을 점검 및 시승까지 가이드합니다.
-            </p>
-            <a class="main-full-link" href="pages/project-mobillink.html" >
-              View work
-            </a>
-          </div>
-          
-          <div class="main-full-img big">
-            <img src="img/portfolio/responsible-mobillink01.png" class="pc-pic" alt="Mobillink">
-            <img src="img/portfolio/responsible-mobillink02.png" class="mobile-pic" alt="Mobillink">
-          </div>
-        </div>
-      </div>
-
-      <div class="section main-full-video">
-        <iframe title="Mobillink" src="https://player.vimeo.com/video/719506079?h=669ad8989&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-        <div class="iframe-scroll"></div>
-      </div>
-      
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 09</span>
-            <p class="title">O Cha <span class="pc-tit">AI 크로스 검색(Cross Search)을 통한 맛집 추천 플랫폼</span></p>
-            <p class="des">
-              빅데이터를 통해 위치를 기반으로 음식점에 대한 다양한 정보를 구조화하고 단순히 검색의 나열이 아닌 교차검색과 비슷한 취향의 사람들이 남긴 리뷰평점을 활용하여 다양한 추천이 가능하도록 함으로써 정보취득의 단계를 최소화시키고 만족스러운 정보를 제공받을 수 있도록 디자인 하였습니다.
-            </p>
-            <a class="main-full-link" href="pages/project-ocha.html" >
-              View work
-            </a>
-          </div>
-          
-          <div class="main-full-img video">
-            <iframe title="O Cha" src="https://player.vimeo.com/video/738841792?h=aaae568655&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="section main-full-video">
-        <iframe title="O Cha" src="https://player.vimeo.com/video/700284786?h=e2da2f5fe8&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-        <div class="iframe-scroll"></div>
-      </div>
-      
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 10</span>
-            <p class="title">144Cake <span class="pc-tit">12가지 케이크와 12가지 과일의 조합</span></p>
-            <p class="des">
-              144Cake 브랜드는 12가지 케이크와 12가지 과일의 조합으로 소비자들이 앱을 통해 직접 선택하여 주문할 수 있는 커스텀 프레쉬 케이크입니다. 블루베리,레몬,오렌지,망고,사과,바나나,자몽,딸기,키위,청포도,복숭아,파인애플 원하는 과일과 케이크를 선택하여 주문하면 다음 날 받을 수 있는 시스템을 구축하였습니다.
-            </p>
-            <a class="main-full-link" href="pages/project-144cake.html" >
-              View work
-            </a>
-          </div>
-          
-          <div class="main-full-img video">
-            <iframe title="144Cake" src="https://player.vimeo.com/video/738680575?h=cde407c997&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="section main-full-video">
-        <iframe title="144Cake" src="https://player.vimeo.com/video/721868857?h=28f3829c62&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-        <div class="iframe-scroll"></div>
-      </div>
-      
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 11</span>
-            <p class="title">Endigo <span class="pc-tit">실시간 통합 배송조회시스템</span></p>
-            <p class="des">
-              Endigo는 국내국제 실시간 통합 배송조회시스템입니다. 운송장 번호 하나로 현재 기사님의 위치를 확인할 수 있으며, 방문 예정 시간도 확인 가능합니다.택배사에서 택배물의 위치정보를 수집하여 데이터화하고, 사용자 요청에 따른 택배물의 위치정보와 도착예정 정보를 제공하는 택배위치추적 서비스입니다.
-            </p>
-            <a class="main-full-link" href="pages/project-endigo.html" >
-              View work
-            </a>
-          </div>
-          
-          <div class="main-full-img video">
-            <iframe title="Endigo" src="https://player.vimeo.com/video/738682334?h=a9d2729b7&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="section main-full-video">
-        <iframe title="Endigo" src="https://player.vimeo.com/video/721871188?h=e7be69cedc&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-        <div class="iframe-scroll"></div>
-      </div>
-      
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 12</span>
-            <p class="title">Fredit <span class="pc-tit">디자인 포트폴리오 공유 플랫폼</span></p>
-            <p class="des">
-              프레딧은 디자이너들의 포트폴리오 DB 플랫폼입니다. 분야별 데이터 베이스를 구축하여 디자이너들의 다양한 포트폴리오를 디스플레이 및 검색이 가능하도록 설계하였으며 리쿠르트와 연계하여 잡플래닝을 설계할 수 있습니다.
-            </p>
-            <a class="main-full-link" href="#" >
-              View work
-            </a>
-          </div>
-          
-          <div class="main-full-img big">
-            <img src="img/portfolio/port-06.png" alt="Fredit">
-          </div>
-        </div>
-      </div>
-
-      <div class="section main-full-video">
-        <iframe title="Fredit" src="https://player.vimeo.com/video/747164147?h=b55d649838&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-        <div class="iframe-scroll"></div>
-      </div>
-      
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 13</span>
-            <p class="title">Space C <span class="pc-tit">인테리어, 리모델링 전문 Space C 모바일 iOS App</span></p>
-            <p class="des">
-              Space C 의 인테리어 디자인 아이덴티티는 "Simple & Modern"으로 브랜드 정체성을 모바일에서도 일관되게 정의함으로써 Space C의 브랜드가치를 향상시키고자 했습니다.
-            </p>
-            <a class="main-full-link" href="pages/project-spacec.html" >
-              View work
-            </a>
-          </div>
-          
-          <div class="main-full-img video">
-            <iframe title="Space C" src="https://player.vimeo.com/video/740496590?h=780389300e&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="section main-full-video">
-        <iframe title="Space C" src="https://player.vimeo.com/video/721877655?h=194316d709&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-        <div class="iframe-scroll"></div>
-      </div>
-      
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 14</span>
-            <p class="title">6 Nails <span class="pc-tit">식스네일즈 브랜드사이트</span></p>
-            <p class="des">
-              6nails는 사용자가 직접 디자인하는 커스텀 네일아트 폰케이스입니다. 젤네일은 물론 다양한 네일팟으로 데코레이션이 가능하며 사용자의 네일과 매칭, 네일아트 하듯이 폰케이스에 디자인이 가능한 폰케이스입니다.
-            </p>
-            <a class="main-full-link" href="pages/project-6nails.html" >
-              View work
-            </a>
-          </div>
-          
-          <div class="main-full-img big">
-            <img src="img/portfolio/port-04.png" alt="6 Nails">
-          </div>
-        </div>
-      </div>
-
-      <div class="section main-full-video">
-        <iframe title="6 Nails" src="https://player.vimeo.com/video/747145056?h=611b29d62f&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-        <div class="iframe-scroll"></div>
-      </div>
-      
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 15</span>
-            <p class="title">6 Nails <span class="pc-tit">커스텀 폰케이스 디자인</span></p>
-            <p class="des">
-              6nails는 사용자가 직접 디자인하는 커스텀 네일아트 폰케이스입니다. 젤네일은 물론 다양한 네일팟으로 데코레이션이 가능하며 사용자의 네일과 매칭, 네일아트 하듯이 폰케이스에 디자인이 가능한 폰케이스입니다.
-            </p>
-            <a class="main-full-link" href="pages/project-6nails.html" >
-              View work
-            </a>
-          </div>
-          
-          <div class="main-full-img big">
-            <img src="img/portfolio/port-02.png" alt="6 Nails">
-          </div>
-        </div>
-      </div>
-
-      <div class="section main-full-video">
-        <iframe title="6 Nails" src="https://player.vimeo.com/video/738820522?h=aa6d39cb76&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-        <div class="iframe-scroll"></div>
-      </div>
-      
-      <div class="section">
-        <div class="fl fl-center fl-row-reverse rl">
-          <div class="main-full-txt">
-            <span class="number">PROJECT 16</span>
-            <p class="title">Cyclean  <span class="pc-tit">대나무를 소재로 한 유기농 생리팬티 싸이클린 브랜딩</span></p>
-            <p class="des">
-              싸이클린은 Cycle과 Clean의 합성어로 깨끗하게 재사용된다는 의미의 친환경 유기농 대나무섬유로 만든 생리팬티 브랜드명입니다.
-            </p>
-            <a class="main-full-link" href="pages/project-cyclean.html" >
-              View work
-            </a>
-          </div>
-          
-          <div class="main-full-img video v2">
-            <iframe title="Cyclean" src="https://player.vimeo.com/video/738890488?h=ad3bf98631&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="section main-full-video">
-        <iframe title="Cyclean" src="https://player.vimeo.com/video/747151024?h=e4b1058caa&autoplay=1&loop=1&title=0&portrait=0&autopause=0&background=1" frameborder="0" allowfullscreen></iframe>
-        <div class="iframe-scroll"></div>
-      </div>
-      
-
-      <div class="section main-footer fp-auto-height">
-        <footer class="footer">
-          <div class="footer-inner">
-            <p class="footer-title">Connecting People, Create a New Culture</p>
-            <a href="mailto:project@abbeyroad.asia">project@abbeyroad.asia</a>
-            <p>서울시 서초구 효령로26길 9-12 1F (주)애비로드커뮤니케이션즈</p>
-            <p class="footer-copy">
-              <span>2023ⓒ abbeyroad communication. All rights reserved.</span>
-            </p>
-          </div>
-        </footer>
       </div>
     </div>
-
+      
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <p class="footer-title">Connecting People, Create a New Culture</p>
+        <a href="mailto:project@abbeyroad.asia">project@abbeyroad.asia</a>
+        <p>서울시 서초구 효령로26길 9-12 1F (주)애비로드커뮤니케이션즈</p>
+        <p class="footer-copy">
+          <span>2023ⓒ abbeyroad communication. All rights reserved.</span>
+        </p>
+      </div>
+    </footer>
     
   </div>
   <!-- //wrapper -->
     
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <script src="js/plugin.imagesloaded.pkgd.js"></script> 
-    <script defer src="js/common.js"></script>
+    <script src="/js/masonry.pkgd.min.js" ></script>
+    <script src='/js/plugin.imagesloaded.pkgd.js' ></script>
+    <script src="/js/plugin.TweenMax.min.js" ></script>
+    <script src="/js/common.js" ></script>
+    <script src="/js/portfolio.js"></script> 
+    <script src="/js/animate.js"></script> 
+    <script src="/js/smoothscroll.js" defer></script>
 </body>
 <!-- //body -->
 </html>
