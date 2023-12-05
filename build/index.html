@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>abbeyroad</title>
+  <meta content="The main page." name="description" />
+  <!-- Styles-->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/sub.css" />
+
+  <!-- Favicon-->
+  <link rel="icon" href="img/favicon/favicon2.ico" />
+  <link rel="mask-icon" href="img/favicon/favicon2.ico" color="#ffffff" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- <link rel="icon" href="../img/favicon/favicon.svg"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">-->
+  <!-- <link rel="manifest" href="../img/favicon/manifest.json"> -->
+
+  <!-- <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff"> -->
+
+  <!-- <script>
+      $(document).ready(function() {
+          $('#fullpage').fullpage({
+            scrollingSpeed: 1000,
+            css3:false
+		        //parallax: true,
+          });
+        });
+        
+    </script> -->
+</head>
+<!-- body -->
+
+<body class="nav-alt main">
+  <!-- a_skip
+  <div id="a_skip"> 
+    <a href="#nav"><span>메뉴 바로가기</span></a> 
+    <a href="#fullpage"><span>본문 바로가기</span></a> 
+  </div> -->
+  <!-- wrapper -->
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header" id="header">
+      <h1>
+        <a class="brand logo" href="/index.html">
+          <img class="default" src="/img/logo.svg" alt="abbeyroad" />
+        </a>
+      </h1>
+      <a class="copy-link" href="https://www.abbeyroad.asia/files/down/abbeyroad_2022.pdf">Company Profile</a>
+      <div class="burger"></div>
+      <div class="nav" id="nav">
+        <ul class="menu main font-ng">
+          <li class="menu-item"><a class="menu-link smooth" href="/pages/about-studio.html">하는 일</a></li>
+          <li class="menu-item"><a class="menu-link smooth" href="/pages/portfolio-filters.html">쇼케이스</a></li>
+          <li class="menu-item"><a class="menu-link smooth" href="/pages/contact.html">문의하기</a></li>
+          <li class="menu-item last"><a class="menu-link smooth" href="/files/down/abbeyroad_2022.pdf">회사소개서</a></li>
+        </ul>
+      </div>
+      <div class="menu txt">
+        <p>Connecting People,<br />Create a New Culture</p>
+        <!-- <a class="menu-link anchor-link" href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+      <a class="menu-link anchor-link" href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+      <a class="menu-link anchor-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>        -->
+      </div>
+      <a class="burger"></a>
+    </header>
+    <!-- //Header-->
+
+    <div class="wrapper">
+      <div class="content portfolio sub" id="content">
+        <div data-scroll>
+          <div data-scroll-content>
+            <!-- container -->
+            <div class="container">
+              <!-- main-visual -->
+              <h2 class="main-title animated-text">Abbeyroad<br />communications</h2>
+              <div class="main-visual">
+                <div class="visual-img"><img src="/img/main/visual_img.png" alt="" loading="lazy" /></div>
+                <div class="visual-video">
+                  <video poster="/img/main/visual_video.png" muted loop playsinline>
+                    <source src="/video/abbey_video.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+
+              <div class="portfolio-title">
+                <h3 class="animated-text v2">프로젝트를 통한 경험이<br />가장 큰 자산입니다.</h3>
+              </div>
+              <span class="toggle-btn mo"></span>
+              <ul id="grid-filter">
+                <li data-category="*" class="on">All</li>
+                <li data-category="UX">UX</li>
+                <li data-category="BX">BX</li>
+              </ul>
+
+              <div id="masonry-grid">
+                <div class="grid-sizer"></div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-shinhan.html">
+                    <img src="/img/work/detail/shinhan/th.png" alt="신한 Alpha Mydata Application" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">신한 Alpha Mydata Application<span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-gs.html">
+                    <img src="/img/work/detail/gs/gs-th.png" alt="gs" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">GS Energy Plus EV<span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-wh.html">
+                    <img src="/img/work/detail/wh/wh-th.png" alt="wh" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">Wormhall<span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-ocean.html">
+                    <img src="/img/work/detail/ocean/oc-th.png" alt="oc" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">OceanTechnology<span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-kbstar.html">
+                    <img src="/img/work/detail/kbstar/th.png" alt=">KB스타 기업뱅킹" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">KB스타 기업뱅킹 : 스마트한 기업서비스<span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-gsc-odt.html">
+                    <img src="/img/work/detail/gsc-odt/th.png" alt=">gsc-odt" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">GSC 셀프 ODT<span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-gsc-odt.html">
+                    <img src="/img/work/detail/mshop/th.png" alt="M-shop Application" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">M-shop Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-mobillink.html">
+                    <img src="/img/work/detail/mobillink/th.png" alt="Mobillink Responsive Web" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">Mobillink Responsive Web <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-ocha.html">
+                    <img src="/img/work/detail/ocha/th.png" alt="O Cha Application" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">O Cha Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-144cake.html">
+                    <img src="/img/work/detail/144cake/th.png" alt="144 Cake Application" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">144 Cake Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-endigo.html">
+                    <img src="/img/work/detail/endigo/th.png" alt="Endigo Application " />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">Endigo Application <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-spacec.html">
+                    <img src="/img/work/detail/spacec/th.png" alt="Space C Mobile Web" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">Space C Mobile Web <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="#">
+                    <img src="/img/work/detail/fredit/th.png" alt="Fredit Web" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">Fredit Web <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 UX">
+                  <a class="thumb space-2 animated" href="/pages/project-6nails.html">
+                    <img src="/img/work/detail/6nails_web/th.png" alt="6Nails Web " />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">6Nails Web <span>UX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 BX">
+                  <a class="thumb space-2 animated" href="/pages/project-6nails.html">
+                    <img src="/img/work/detail/6nails/th.png" alt="6Nails Product Design" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">6Nails Product Design <span>BX</span></strong>
+                  </a>
+                </div>
+                <div class="grid-item a h_1 BX">
+                  <a class="thumb space-2 animated" href="/pages/project-cyclean.html">
+                    <img src="/img/work/detail/cyclean/th.png" alt="Cyclean Branding" />
+                    <span class="ov"></span>
+                    <span class="ov-ty">Design</span>
+                    <strong class="ov-tit">Cyclean Branding <span>BX</span></strong>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- //container -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <p class="footer-title">Connecting People, Create a New Culture</p>
+        <a href="mailto:project@abbeyroad.asia">project@abbeyroad.asia</a>
+        <p>서울시 서초구 효령로26길 9-12 1F (주)애비로드커뮤니케이션즈</p>
+        <p class="footer-copy">
+          <span>2023ⓒ abbeyroad communication. All rights reserved.</span>
+        </p>
+      </div>
+    </footer>
+  </div>
+  <!-- //wrapper -->
+
+  <script src="/js/masonry.pkgd.min.js"></script>
+  <script src="/js/plugin.imagesloaded.pkgd.js"></script>
+  <script src="/js/plugin.TweenMax.min.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/portfolio.js"></script>
+  <script src="/js/animate.js"></script>
+  <script src="/js/smoothscroll.js" defer></script>
+
+  <script>
+    // 영상 클릭시 재생
+    // (function () {
+    // 	const mainVideo = document.querySelector(".visual-video video");
+    // 	mainVideo.addEventListener("click", () => {
+    // 		mainVideo.play();
+    // 	});
+    // })();
+
+    window.addEventListener("scroll", function () {
+      let scrollPosition = window.scrollY;
+      const mainVisual = document.querySelector(".main-visual");
+      if (scrollPosition > 0) {
+        mainVisual.classList.add("is-transform");
+      } else {
+        mainVisual.classList.remove("is-transform");
+      }
+    });
+  </script>
+</body>
+<!-- //body -->
+
+</html>
