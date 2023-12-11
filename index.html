@@ -90,7 +90,7 @@
               <div class="main-visual">
                 <div class="visual-img"><img src="img/main/visual_img.png" alt="" loading="lazy" /></div>
                 <div class="visual-video">
-                  <video poster="img/main/visual_video.png" muted loop playsinline>
+                  <video poster="img/main/visual_video.png" muted loop playsinline autoplay>
                     <source src="img/main/visual_video.mp4" type="video/mp4" />
                   </video>
                 </div>
@@ -270,12 +270,12 @@
 
   <script>
     // 영상 클릭시 재생
-    (function () {
-      const mainVideo = document.querySelector(".visual-video video");
-      mainVideo.addEventListener("click", () => {
-        mainVideo.play();
-      });
-    })();
+    // (function () {
+    //   const mainVideo = document.querySelector(".visual-video video");
+    //   mainVideo.addEventListener("click", () => {
+    //     mainVideo.play();
+    //   });
+    // })();
 
     window.addEventListener("scroll", function () {
       let scrollPosition = window.scrollY;
