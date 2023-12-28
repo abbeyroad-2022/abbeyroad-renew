@@ -1441,6 +1441,9 @@ html {
   .next-project a.bg-gsc-odt {
     background-image: url("../img/work/detail/gsc-odt/m-n1.png");
   }
+  .next-project a.bg-kbmablewide {
+    background-image: url("../img/work/detail/kbmablewide/m-n1.png");
+  }
 
   .grid.g4 > .lottie-wrap {
     height: 330px;
