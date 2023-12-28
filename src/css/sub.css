@@ -638,8 +638,7 @@ html {
   }
 
   .about-slide .about-slide-inner {
-    background: #000 url("../img/about/about-slidebg-m.png") 50% / cover
-      no-repeat;
+    background: #000 url("../img/about/about-slidebg-m.png") 50% / cover no-repeat;
   }
 
   .about-slide .about-slide-inner .type1 .t-wrap {
@@ -882,6 +881,10 @@ html {
   transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+#masonry-grid video {
+  display: block;
+  width: 100%;
 }
 #masonry-grid a {
   position: relative;
