@@ -20,6 +20,7 @@ html, body { font-size: 22px; font-family:  "Nanum Gothic", sans-serif;}
 .fl-wrap {-ms-flex-wrap: wrap;flex-wrap: wrap;}
 .rl {position: relative;}
 .w100 { display: block; margin: 0 auto; width: 100%; }
+.mw1920 {max-width: 1920px;}
 .h100 { display: block; height: 100vh; height: calc(var(--vh, 1vh) * 100); }
 .h150 { display: block; height: 150vh; height: calc(var(--vh, 1vh) * 150); }
 .h200 { display: block; height: 200vh; height: calc(var(--vh, 1vh) * 200); }
