@@ -1369,6 +1369,9 @@ html {
 .next-project a.bg-gsc-odt {
   background-image: url("../img/work/detail/gsc-odt/n1.png");
 }
+.next-project a.bg-kbmablewide {
+  background-image: url("../img/work/detail/kbmablewide/n1.png");
+}
 
 .grid.g4 > .lottie-wrap {
   width: 50%;
@@ -1655,6 +1658,7 @@ html {
 }
 .main-visual {
   position: relative;
+  display: block;
   margin: 200px -25vw 120px;
   -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;

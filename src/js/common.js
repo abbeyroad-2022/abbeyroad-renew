@@ -132,13 +132,3 @@ const observer = new IntersectionObserver(observerCallback, observerOptions);
 
 reveal.forEach((el) => observer.observe(el));
  */
-
-window.addEventListener("scroll", function () {
-  let scrollPosition = window.scrollY;
-  const mainVisual = document.querySelector(".main-visual");
-  if (scrollPosition > 0) {
-    mainVisual.classList.add("is-transform");
-  } else {
-    mainVisual.classList.remove("is-transform");
-  }
-});
