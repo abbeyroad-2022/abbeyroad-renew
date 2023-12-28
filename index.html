@@ -87,7 +87,7 @@
             <div class="container">
               <!-- main-visual -->
               <h2 class="main-title animated-text">Abbeyroad<br />communications</h2>
-              <div class="main-visual">
+              <a class="main-visual" href="pages/project-kbmablewide.html">
                 <div class="visual-img"><img src="img/main/visual_img.png" alt="" loading="lazy" /></div>
                 <div class="visual-video">
                   <video poster="img/main/visual_video.png" muted loop playsinline autoplay>
@@ -96,7 +96,7 @@
                     Your browser does not support the video tag.
                   </video>
                 </div>
-              </div>
+              </a>
 
               <div class="portfolio-title ">
                 <h2 class="animated-text v2">프로젝트를 통한 경험이<br>가장 큰 자산입니다.</h2>
@@ -289,6 +289,17 @@
   <script src="js/portfolio.js"></script>
   <script src="js/animate.js"></script>
   <script src="js/smoothscroll.js" defer></script>
+  <script>
+    window.addEventListener("scroll", function () {
+      let scrollPosition = window.scrollY;
+      const mainVisual = document.querySelector(".main-visual");
+      if (scrollPosition > 0) {
+        mainVisual.classList.add("is-transform");
+      } else {
+        mainVisual.classList.remove("is-transform");
+      }
+    });
+  </script>
 </body>
 <!-- //body -->
 
