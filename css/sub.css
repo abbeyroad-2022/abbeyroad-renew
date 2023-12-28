@@ -930,9 +930,6 @@ html {
   display: block;
   width: 100%;
 }
-#masonry-grid video + img {
-  display: none;
-}
 #masonry-grid a {
   position: relative;
   display: block;
